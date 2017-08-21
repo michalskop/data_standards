@@ -1,2 +1,4 @@
-# data_standards
-Data standards
+# Data standards
+
+## Gazette notice
+```/gazette_notice```

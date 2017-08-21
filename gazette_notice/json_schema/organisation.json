@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A company in OpenCorporates",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Legal name of the company",
+      "minLength": 1
+    },
+    "registered_address": {
+      "$ref": "address.json"
+    },
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "$ref": "identifier.json"
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "name"
+      ]
+    },
+    {
+      "required": [
+        "identifiers"
+      ]
+    }
+  ]
+}

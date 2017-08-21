@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "oneOf": [
+    {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 2
+    },
+    {
+      "name": "Address",
+      "description": "An address object",
+      "type": "object",
+      "properties": {
+        "street_address": {
+          "description": "Street and/or numbers, e.g. '347', 'Vinice 347', 'E12'",
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "description": "ISO 3166-2 code for country",
+          "type": "string"
+        },
+        "identifiers": {
+          "description": "Issued identifiers, e.g. RUIAN numbers",
+          "type": ["array", "null"],
+          "items": {
+            "$ref": "identifier.json"
+          }
+        }
+      }
+    },
+    {
+        "name": "Geocoordinates",
+        "description": "Geographical coordinates of address",
+        "type": "object",
+        "properties": {
+            "latitude": {
+                "type": "number"
+            },
+            "longitude": {
+                "type": "number"
+            }
+        }
+    },
+    {
+        "name": "Geoshape",
+        "description": "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.",
+        "type": "object",
+        "properties": {
+            "box": {
+                "type": "string",
+                "description": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character."
+            },
+            "circle": {
+                "type": "string",
+                "description": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters."
+            },
+            "line": {
+                "type": "string",
+                "description": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
+            },
+            "polygon": {
+                "type": "string",
+                "description": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical."
+            }
+        }
+    }
+  ]
+}
