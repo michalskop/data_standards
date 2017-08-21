@@ -1,0 +1,60 @@
+{
+    "publisher": {
+        "entity_type": "organisation",
+        "entity_properties": {
+            "name": "Město Plasy",
+            "identifiers": [
+                {
+                    "identifier": "00258245",
+                    "scheme": "IČ"
+                }
+            ]
+        }
+    },
+    "identifier": "http://www.plasy.cz/urad-361/uredni-deska/zverejneni-stanoveni-prechodne-upravy-provozu-mistni-komunikace-lipova-1282.html",
+    "date_published": "2017-06-14",
+    "date_unpublished": "2017-06-30",
+    "creator": {
+        "entity_type": "organisation",
+        "entity_properties": {
+            "name": "Městský úřad Kralovice",
+            "identifiers": [
+                {
+                    "identifier": "00257966",
+                    "scheme": "IČ"
+                }
+            ]
+        }
+    },
+    "summary": "Stanovení přechodné úpravy provozu - místní komunikace Lipová",
+    "about": {
+        "classification": [
+            {
+                "name": "oznámení"
+            }
+        ],
+        "locations": [
+            {
+                "address": {
+                    "street_address": "Lipová",
+                    "locality": "Plasy",
+                    "country_code": "CZ",
+                    "identifiers": [
+                        {
+                            "identifier": "404811",
+                            "scheme": "RUIAN"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "url": "http://www.plasy.cz/urad-361/uredni-deska/zverejneni-stanoveni-prechodne-upravy-provozu-mistni-komunikace-lipova-1282.html",
+    "media_type": "text/html",
+    "documents": [
+        {
+            "url": "http://www.plasy.cz/e_download.php?file=data/uredni_deska/obsah1198_1.pdf&original=Stanoven%C3%AD%20p%C5%99echodn%C3%A9%20%C3%BApravy-%20Lipov%C3%A1.pdf",
+            "media_type": "application/pdf"
+        }
+    ]
+}

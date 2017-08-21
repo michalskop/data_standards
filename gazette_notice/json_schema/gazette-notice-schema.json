@@ -1,12 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost/michal/project/data_standards/gazette_notice/json_schema/gazette-notice-schema.json",
     "title": "Notice",
     "description": "A gazette notice",
     "type": "object",
     "properties": {
         "publisher": {
             "description": "The publisher of the notice",
-            "$ref": "entity.json"
+            "$ref": "./entity.json"
         },
         "identifier": {
             "description": "The publisher's identifier for the notice, which may not be unique",
@@ -19,7 +20,7 @@
             "description": "The entities that the notice is primarily about",
             "type": "array",
             "items": {
-                "$ref": "entity.json"
+                "$ref": "./entity.json"
             }
         },
         "date_published": {
@@ -34,7 +35,7 @@
         },
         "creator": {
             "description": "The original creator/author of the notice.",
-            "$ref": "entity.json"
+            "$ref": "./entity.json"
         },
         "summary": {
             "description": "A brief summary of the notice's content",
