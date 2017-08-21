@@ -1,130 +1,130 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Notice",
-  "description": "A gazette notice",
-  "type": "object",
-  "properties": {
-    "publisher": {
-        "description": "The publisher of the notice",
-        "$ref": "entity.json"
-    },
-    "identifier": {
-      "description": "The publisher's identifier for the notice, which may not be unique",
-      "type": [
-        "number",
-        "string"
-      ]
-    },
-    "subjects": {
-      "description": "The entities that the notice is primarily about",
-      "type": "array",
-      "items": {
-        "$ref": "entity.json"
-      }
-    },
-    "date_published": {
-      "description": "The date of publication of the notice in the gazette",
-      "type": "string",
-      "format": "date"
-    },
-    "date_unpublished": {
-      "description": "The date of unpublication of the notice from the gazette",
-      "type": "string",
-      "format": "date"
-    },
-    "creator": {
-        "description": "The original creator/author of the notice.",
-        "$ref": "entity.json"
-    },
-    "summary": {
-      "description": "A brief summary of the notice's content",
-      "type": "string"
-    },
-    "about": {
-        "description": "The content of the notice",
-        "type": "object",
-        "properties": {
-            "classification": {
-                "description": "The type of the notice",
-                "type": "array",
-                "items": {
-                    "$ref": "classification.json"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Notice",
+    "description": "A gazette notice",
+    "type": "object",
+    "properties": {
+        "publisher": {
+            "description": "The publisher of the notice",
+            "$ref": "entity.json"
+        },
+        "identifier": {
+            "description": "The publisher's identifier for the notice, which may not be unique",
+            "type": [
+                "number",
+                "string"
+            ]
+        },
+        "subjects": {
+            "description": "The entities that the notice is primarily about",
+            "type": "array",
+            "items": {
+                "$ref": "entity.json"
+            }
+        },
+        "date_published": {
+            "description": "The date of publication of the notice in the gazette",
+            "type": "string",
+            "format": "date"
+        },
+        "date_unpublished": {
+            "description": "The date of unpublication of the notice from the gazette",
+            "type": "string",
+            "format": "date"
+        },
+        "creator": {
+            "description": "The original creator/author of the notice.",
+            "$ref": "entity.json"
+        },
+        "summary": {
+            "description": "A brief summary of the notice's content",
+            "type": "string"
+        },
+        "about": {
+            "description": "The content of the notice",
+            "type": "object",
+            "properties": {
+                "classification": {
+                    "description": "The type of the notice",
+                    "type": "array",
+                    "items": {
+                        "$ref": "classification.json"
+                    }
+                },
+                "body": {
+                    "description": "The unstructured prose content",
+                    "$ref": "#/definitions/body"
+                },
+                "locations": {
+                    "description": "Locations affected by the notice",
+                    "type": "array",
+                    "items": {
+                        "$ref": "address.json"
+                    }
                 }
-            },
-            "body": {
-              "description": "The unstructured prose content",
-              "$ref": "#/definitions/body"
-            },
-            "locations": {
-                "description": "Locations affected by the notice",
-                "type": "array",
-                "items": {
-                  "$ref": "address.json"
-                }
+            }
+        },
+        "url": {
+            "description": "The URL of the notice, at which a human may verify the data",
+            "type": "string",
+            "format": "uri"
+        },
+        "media_type": {
+            "description": "The media type of the URL resource",
+            "type": "string"
+        },
+        "documents": {
+            "description": "Additional documents",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/document"
             }
         }
     },
-    "url": {
-      "description": "The URL of the notice, at which a human may verify the data",
-      "type": "string",
-      "format": "uri"
-    },
-    "media_type": {
-      "description": "The media type of the URL resource",
-      "type": "string"
-    },
-    "documents": {
-        "description": "Additional documents",
-        "type": "array",
-        "items": {
-            "$ref": "#/definitions/document"
+    "required": [
+        "publisher",
+        "identifier",
+        "url"
+    ],
+    "definitions": {
+        "document": {
+            "title": "Document",
+            "description": "Any document",
+            "type": "object",
+            "properties": {
+                "url": {
+                    "description": "The URL of the document",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "media_type": {
+                    "description": "The media type of the URL resource",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "The content of the document",
+                    "$ref": "#/definitions/body"
+                }
+            }
+        },
+        "body": {
+            "title": "Body",
+            "description": "The unstructured content",
+            "type": "object",
+            "properties": {
+                "value": {
+                    "description": "The content",
+                    "type": "string"
+                },
+                "media_type": {
+                    "description": "The media type of the content",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "value"
+            ]
         }
     }
-  },
-  "required": [
-    "publisher",
-    "identifier",
-    "url"
-  ],
-  "definitions": {
-      "document": {
-          "title": "Document",
-          "description": "Any document",
-          "type": "object",
-          "properties": {
-              "url": {
-                "description": "The URL of the document",
-                "type": "string",
-                "format": "uri"
-              },
-              "media_type": {
-                  "description": "The media type of the URL resource",
-                  "type": "string"
-              },
-              "body": {
-                  "description": "The content of the document",
-                  "$ref": "#/definitions/body"
-              }
-          }
-      },
-      "body": {
-          "title": "Body",
-          "description": "The unstructured content",
-          "type": "object",
-          "properties": {
-              "value": {
-                "description": "The content",
-                "type": "string"
-              },
-              "media_type": {
-                "description": "The media type of the content",
-                    "type": "string"
-                  }
-          },
-          "additionalProperties": false,
-          "required": [
-              "value"
-          ]
-      }
-  }
 }
