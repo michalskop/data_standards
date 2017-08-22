@@ -16,12 +16,14 @@
                 "string"
             ]
         },
-        "subjects": {
-            "description": "The entities that the notice is primarily about",
-            "type": "array",
-            "items": {
-                "$ref": "./entity.json"
-            }
+        "url": {
+            "description": "The URL of the notice, at which a human may verify the data",
+            "type": "string",
+            "format": "uri"
+        },
+        "media_type": {
+            "description": "The media type of the URL resource",
+            "type": "string"
         },
         "date_published": {
             "description": "The date of publication of the notice in the gazette",
@@ -65,14 +67,12 @@
                 }
             }
         },
-        "url": {
-            "description": "The URL of the notice, at which a human may verify the data",
-            "type": "string",
-            "format": "uri"
-        },
-        "media_type": {
-            "description": "The media type of the URL resource",
-            "type": "string"
+        "subjects": {
+            "description": "The entities that the notice is primarily about",
+            "type": "array",
+            "items": {
+                "$ref": "./entity.json"
+            }
         },
         "documents": {
             "description": "Additional documents",
