@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Postal Address",
+  "description": "An address object",
+  "type": "object",
+  "properties": {
+    "street_address": {
+      "description": "Street and/or numbers, e.g. '347', 'Vinice 347', 'E12'",
+      "type": "string"
+    },
+    "locality": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "country_code": {
+      "description": "ISO 3166-2 code for country",
+      "type": "string"
+    },
+    "identifiers": {
+      "description": "Issued identifiers, e.g. RUIAN numbers",
+      "type": ["array", "null"],
+      "items": {
+        "$ref": "identifier.json"
+      }
+    }
+  }
+}

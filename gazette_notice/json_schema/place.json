@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "anyOf": [
+    {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 2
+    },
+    {
+        "name": "Postal Address",
+        "$ref": "./postal_address.json"
+    },
+    {
+        "name": "Geocoordinates",
+        "$ref": "./geocoordinates.json"
+    },
+    {
+        "name": "Geoshape",
+        "$ref": "./geoshape.json"
+    }
+  ]
+}
