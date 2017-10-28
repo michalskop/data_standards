@@ -9,7 +9,7 @@
       "minLength": 1
     },
     "registered_address": {
-      "$ref": "address.json"
+      "$ref": "place.json"
     },
     "identifiers": {
       "type": "array",

@@ -19,6 +19,10 @@
     {
         "name": "Geoshape",
         "$ref": "./geoshape.json"
+    },
+    {
+        "name": "Identifier",
+        "$ref": "./identifier.json"
     }
   ]
 }
