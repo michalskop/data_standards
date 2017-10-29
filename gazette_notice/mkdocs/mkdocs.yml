@@ -1,0 +1,5 @@
+site_name: Dokumenty na úředních deskách
+pages:
+    - Home: index.md
+    - O projektu: about.md
+theme: readthedocs
