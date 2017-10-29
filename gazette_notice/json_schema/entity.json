@@ -2,30 +2,30 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
-    "entity_type",
-    "entity_properties"
+    "type",
+    "properties"
   ],
   "oneOf": [
     {
       "properties": {
-        "entity_type": {
+        "type": {
           "enum": [
             "person"
           ]
         },
-        "entity_properties": {
+        "properties": {
           "$ref": "person.json"
         }
       }
     },
     {
       "properties": {
-        "entity_type": {
+        "type": {
           "enum": [
             "organisation"
           ]
         },
-        "entity_properties": {
+        "properties": {
           "$ref": "organisation.json"
         }
       }
