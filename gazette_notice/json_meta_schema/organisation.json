@@ -1,21 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A company in OpenCorporates",
+  "description": "A company",
+  "description@cs": "Organizace (právnická osoba)",
+  "@source": "https://github.com/openc/openc-schema/blob/master/schemas/includes/organisation.json",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
       "description": "Legal name of the company",
-      "minLength": 1
+      "description@cs": "Jméno organizace (právnické osoby)",
+      "minLength": 1,
+      "alternatives": ["jmeno"]
     },
     "registered_address": {
-      "$ref": "place.json"
+      "$ref": "place.json",
+      "alternatives": ["adresa"]
     },
     "identifiers": {
       "type": "array",
       "items": {
         "$ref": "identifier.json"
-      }
+        },
+      "alternatives": ["idenfitikatory"]
     }
   },
   "anyOf": [
