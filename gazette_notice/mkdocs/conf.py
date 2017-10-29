@@ -6,7 +6,7 @@
 
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'site/index.html'
 
 # General information about the project.
 project = 'Dokumenty na úřední desce'
