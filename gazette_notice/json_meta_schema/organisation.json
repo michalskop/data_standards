@@ -41,5 +41,14 @@
         "identifiers"
       ]
     }
-  ]
+  ],
+  "example": {
+      "name": "Město Plasy",
+      "identifiers": [
+          {
+              "scheme": "IČ",
+              "identifier": "00258245"
+          }
+      ]
+  }
 }

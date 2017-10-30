@@ -1,5 +1,8 @@
 {
     "alternatives": "Alternatives",
     "type": "Type",
-    "site_name": "Gazette notices"
+    "site_name": "Gazette notices",
+    "one_of": "One of:",
+    "any_of": "Any of",
+    "example": "Example"
 }

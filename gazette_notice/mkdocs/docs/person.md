@@ -1,8 +1,9 @@
-## Fyzická osoba
+## Fyzická osoba <small>(Person)</small>
 
 Fyzická osoba
 
-### date_of_birth
+**`person.json`**
+#### date_of_birth
 
 Alternativy: `date_of_birth`
 
@@ -10,19 +11,19 @@ Datum narození ve fromátu ISO 8601
 
 Typ: `string`
 
-### identifiers
+#### identifiers
 
 Alternativy: `identifiers`
 
 Typ: `array`
 
-### name
+#### name
 
 Alternativy: `name`
 
 Typ: `person_name.json`
 
-### registered_address
+#### registered_address
 
 Alternativy: `registered_address`
 

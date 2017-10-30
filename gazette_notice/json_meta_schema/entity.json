@@ -10,28 +10,34 @@
   ],
   "oneOf": [
     {
+      "name@en": "Person",
+      "name@cs": "Fyzická osoba",
       "properties": {
         "type": {
           "enum": [
             "person"
           ]
-        },
-        "properties": {
-          "$ref": "person.json"
-        }
-      }
+         }
+       },
+       "$ref": "./person.json"
     },
     {
+      "name@en": "organisation",
+      "name@cs": "Organizace",
       "properties": {
         "type": {
           "enum": [
             "organisation"
           ]
-        },
-        "properties": {
-          "$ref": "organisation.json"
         }
-      }
+      },
+      "$ref": "./organisation.json"
     }
-  ]
+  ],
+  "example": {
+      "type": "organisation",
+      "properties": {
+
+      }
+  }
 }

@@ -1,14 +1,15 @@
 site_name: Dokumenty na úředních deskách
 pages:
-    - Entita: entity.md
-    - Fyzická osoba: person.md
-    - Geo souřadnice: geocoordinates.md
-    - Geoshape, geo tvar: geoshape.md
-    - Identifikátor: identifier.md
-    - Jméno fyzické osoby: person_name.md
-    - Klasifikace: classification.md
-    - Místo: place.md
-    - Organizace: organisation.md
-    - Oznámení na úřední desce: gazette-notice-schema.md
-    - Poštovní adresa: postal_address.md
+    - Obsah: index.md
+    - Entita (Entity): entity.md
+    - Fyzická osoba (Person): person.md
+    - Geo souřadnice (Geocoordinates): geocoordinates.md
+    - Geoshape, geo tvar (Geoshape): geoshape.md
+    - Identifikátor (Identifier): identifier.md
+    - Jméno fyzické osoby (Person name): person_name.md
+    - Klasifikace (Classification): classification.md
+    - Místo (Place): place.md
+    - Organizace (Company): organisation.md
+    - Oznámení na úřední desce (Notice): gazette-notice-schema.md
+    - Poštovní adresa (Postal Address): postal_address.md
 theme: readthedocs

@@ -1,8 +1,9 @@
-## Geoshape, geo tvar
+## Geoshape, geo tvar <small>(Geoshape)</small>
 
 Geo souřadnice místa
 
-### box
+**`geoshape.json`**
+#### box
 
 Alternativy: `box`
 
@@ -10,7 +11,7 @@ A box is the area enclosed by the rectangle formed by two points. The first poin
 
 Typ: `string`
 
-### circle
+#### circle
 
 Alternativy: `circle`
 
@@ -18,7 +19,7 @@ A circle is the circular region of a specified radius centered at a specified la
 
 Typ: `string`
 
-### line
+#### line
 
 Alternativy: `line`
 
@@ -26,7 +27,7 @@ A line is a point-to-point path consisting of two or more points. A line is expr
 
 Typ: `string`
 
-### polygon
+#### polygon
 
 Alternativy: `polygon`
 

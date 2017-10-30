@@ -36,5 +36,9 @@
         "scheme"
       ]
     }
-  ]
+  ],
+  "example": {
+      "scheme": "RÚIAN/budovy",
+      "identifier": "4132908"
+  }
 }

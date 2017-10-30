@@ -39,5 +39,11 @@
         "$ref": "identifier.json"
       }
     }
-  }
+  },
+  "example": {
+        "street_address": "Vinice 347",
+        "locality": "Plasy",
+        "postal_code": "33101",
+        "country_code": "CZ"
+    }
 }

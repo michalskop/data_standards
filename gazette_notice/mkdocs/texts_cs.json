@@ -1,5 +1,8 @@
 {
     "alternatives": "Alternativy",
     "type": "Typ",
-    "site_name": "Dokumenty na úředních deskách"
+    "site_name": "Dokumenty na úředních deskách",
+    "one_of": "Jeden z:",
+    "any_of": "Libovolný z:",
+    "example": "Příklad"
 }
