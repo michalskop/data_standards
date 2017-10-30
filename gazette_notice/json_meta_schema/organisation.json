@@ -1,22 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A company",
+  "description@en": "A company",
   "description@cs": "Organizace (právnická osoba)",
+  "name@en": "Company",
+  "name@cs": "Organizace",
   "@source": "https://github.com/openc/openc-schema/blob/master/schemas/includes/organisation.json",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
-      "description": "Legal name of the company",
+      "description@en": "Legal name of the company",
       "description@cs": "Jméno organizace (právnické osoby)",
       "minLength": 1,
       "alternatives": ["jmeno"]
     },
     "registered_address": {
+        "description@en": "Registered address of the organisation",
+        "description@cs": "Adresa organizace (právnické osoby)",
       "$ref": "place.json",
       "alternatives": ["adresa"]
     },
     "identifiers": {
+        "description@en": "Given identifiers",
+        "description@cs": "Identifikátory, např. IČ",
       "type": "array",
       "items": {
         "$ref": "identifier.json"

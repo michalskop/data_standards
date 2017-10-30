@@ -1,6 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "name@en": "Entity",
+  "name@cs": "Entita",
+  "description@cs": "Entita - např. osoba nebo organizace",
   "required": [
     "type",
     "properties"

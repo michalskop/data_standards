@@ -1,6 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A person, for example, referenced in some other context, e.g. director of a company, shareholder, licence-holder, lobbyist. This should be used only if the person is the subject of the datum",
+  "name@en": "Person",
+  "name@cs": "Fyzická osoba",
+  "description@en": "A person, for example, referenced in some other context, e.g. director of a company, shareholder, licence-holder, lobbyist. This should be used only if the person is the subject of the datum",
+  "description@cs": "Fyzická osoba",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -8,11 +11,13 @@
       "$ref": "person_name.json"
     },
     "registered_address": {
-      "description":"address for service (or address given in the context of legal requirement)",
+      "description@en":"address for service (or address given in the context of legal requirement)",
+      "description@cs": "Adresa",
       "$ref": "place.json"
     },
     "date_of_birth": {
-        "description": "Date of birth according to ISO 8601",
+        "description@en": "Date of birth according to ISO 8601",
+        "description@cs": "Datum narození ve fromátu ISO 8601",
         "type": "string",
         "format": "date"
     },

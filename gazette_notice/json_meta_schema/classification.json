@@ -1,19 +1,25 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Classification",
-  "description": "A classification from a code list",
+  "description@en": "A classification from a code list",
+  "description@cs": "Klasifikace ze seznamu (číselníku, apod.)",
+  "name@en": "Classification",
+  "name@cs": "Klasifikace",
   "type": "object",
   "properties": {
     "scheme": {
-      "description": "The scheme of the classification, e.g. Category (of the notice)",
+      "description@en": "The scheme of the classification, e.g. Category (of the notice)",
+      "description@cs": "Schéma klasifikace, např. 'ruian/budovy'",
       "type": "string"
     },
     "code": {
-      "description": "The classification",
+      "description@en": "The classification",
+      "description@cs": "Kód, klasifikace",
       "type": "string"
     },
     "name": {
-      "description": "A title or description of the classification, especially if the value is a code",
+      "description@en": "A title or description of the classification, especially if the value is a code",
+      "description@cs": "Název pro danou klasifikaci, zvláště pokud hodnota je köd",
       "type": "string"
     }
   },

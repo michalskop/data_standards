@@ -1,5 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "name@cs": "Jméno fyzické osoby",
+  "name@en": "Person name",
+  "description@en": "The name of a person",
+  "description@cs": "Jméno fyzické osoby",
   "oneOf": [
     {
       "type": [
@@ -9,7 +13,8 @@
       "format": "non-blank"
     },
     {
-      "description": "The name of a person as an object",
+      "description@en": "The name of a person as an object",
+      "description@cs": "Jméno osoby jako objekt",
       "type": "object",
       "properties": {
         "given_name": {
@@ -18,7 +23,8 @@
             "null"
           ],
           "format": "non-blank",
-          "description": "The given name(s) (often first name) of a person, as opposed to their family name. Following FOAF practice, this is preferred to first_name"
+          "description@en": "The given name(s) (often first name) of a person, as opposed to their family name. Following FOAF practice, this is preferred to first_name",
+          "description@cs": "Křestní (obvykle první) jméno nebo jména osoby"
         },
         "family_name": {
           "type": [
@@ -26,7 +32,8 @@
             "null"
           ],
           "format": "non-blank",
-          "description": "The family name (often last name) of a person, as opposed to their family name. Following FOAF practice, this is preferred to last_name"
+          "description@en": "The family name (often last name) of a person, as opposed to their family name. Following FOAF practice, this is preferred to last_name",
+          "description@cs": "Příjmení"
         },
         "title": {
           "type": [
@@ -34,7 +41,8 @@
             "null"
           ],
           "format": "non-blank",
-          "description": "Title such as Mr, Ms, Dr etc"
+          "description@en": "Title such as Mr, Ms, Dr etc",
+          "description@cs": "Titul před jménem, např. 'Mgr.'"
         },
         "suffixes": {
           "type": [
@@ -42,7 +50,8 @@
             "null"
           ],
           "format": "non-blank",
-          "description": "Any suffixes, including degrees, honours (OBE), ordinals (John Smith Jr, Bill Jones II) etc"
+          "description@en": "Any suffixes, including degrees, honours (OBE), ordinals (John Smith Jr, Bill Jones II) etc",
+          "description@cs": "Libovolné sufixy včetně titulů za jménem, např. 'Ph.D'"
         }
       }
     }

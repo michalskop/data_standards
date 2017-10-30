@@ -1,5 +1,14 @@
 site_name: Dokumenty na úředních deskách
 pages:
-    - Home: index.md
-    - O projektu: about.md
+    - Entita: entity.md
+    - Fyzická osoba: person.md
+    - Geo souřadnice: geocoordinates.md
+    - Geoshape, geo tvar: geoshape.md
+    - Identifikátor: identifier.md
+    - Jméno fyzické osoby: person_name.md
+    - Klasifikace: classification.md
+    - Místo: place.md
+    - Organizace: organisation.md
+    - Oznámení na úřední desce: gazette-notice-schema.md
+    - Poštovní adresa: postal_address.md
 theme: readthedocs

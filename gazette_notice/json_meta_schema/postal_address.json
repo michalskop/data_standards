@@ -1,28 +1,39 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "name": "Postal Address",
-  "description": "An address object",
+  "name@en": "Postal Address",
+  "name@cs": "Poštovní adresa",
+  "description@en": "An address object",
+  "description@cs": "Objekt adresa",
   "type": "object",
   "properties": {
     "street_address": {
-      "description": "Street and/or numbers, e.g. '347', 'Vinice 347', 'E12'",
+      "description@en": "Street and/or numbers, e.g. '347', 'Vinice 347', 'E12'",
+      "description@cs": "Ulice a/nebo číslo, např.'347', 'Vinice 347', 'E12'",
       "type": "string"
     },
     "locality": {
+      "description@en": "Locality, municipality",
+      "description@cs": "Obec",
       "type": "string"
     },
     "postal_code": {
+      "description@en": "Post code, ZIP code",
+      "description@cs": "PSČ",
       "type": "string"
     },
     "country": {
+      "description@en": "Country",
+      "description@cs": "Stát",
       "type": "string"
     },
     "country_code": {
-      "description": "ISO 3166-2 code for country",
+      "description@en": "ISO 3166-2 code for country",
+      "description@cs": "Kód země dle ISO 3166-2",
       "type": "string"
     },
     "identifiers": {
-      "description": "Issued identifiers, e.g. RUIAN numbers",
+      "description@en": "Issued identifiers, e.g. RUIAN numbers",
+      "description@cs": "Identifikátory, např. číslo dle RÚIAN",
       "type": ["array", "null"],
       "items": {
         "$ref": "identifier.json"

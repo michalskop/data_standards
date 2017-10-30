@@ -1,7 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "name": "Geocoordinates",
-    "description": "Geographical coordinates of address",
+    "name@en": "Geocoordinates",
+    "name@cs": "Geo souřadnice",
+    "description@en": "Geographical coordinates of address",
+    "description@cs": "Geo souřadnice adresy",
     "type": "object",
     "properties": {
         "latitude": {
