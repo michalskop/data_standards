@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Dokumenty na úředních deskách</title>
+  <title>Obsah - Dokumenty na úředních deskách</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home";
+    var mkdocs_page_name = "Obsah";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = "/";
   </script>
@@ -49,16 +49,26 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href=".">Home</a>
+    <a class="current" href=".">Obsah</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+    <li class="toctree-l2"><a href="#oznameni-na-urednich-deskach">Oznámení na úředních deskách</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#commands">Commands</a></li>
+            <li><a class="toctree-l3" href="#plny-model">Plný model</a></li>
         
-            <li><a class="toctree-l3" href="#project-layout">Project layout</a></li>
+            <li><a class="toctree-l3" href="#submodely">Submodely</a></li>
+        
+            <li><a class="toctree-l3" href="#specifikace-pomoci-json-schema">Specifikace pomocí JSON schema</a></li>
+        
+            <li><a class="toctree-l3" href="#specifikace-pomoci-xsd">Specifikace pomocí XSD</a></li>
+        
+            <li><a class="toctree-l3" href="#serializace-do-csv">Serializace do CSV</a></li>
+        
+            <li><a class="toctree-l3" href="#priklady">Příklady</a></li>
+        
+            <li><a class="toctree-l3" href="#odkazy">Odkazy</a></li>
         
         </ul>
     
@@ -68,7 +78,57 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="about/">O projektu</a>
+    <a class="" href="entity/">Entita (Entity)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="person/">Fyzická osoba (Person)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="geocoordinates/">Geo souřadnice (Geocoordinates)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="geoshape/">Geoshape, geo tvar (Geoshape)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="identifier/">Identifikátor (Identifier)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="person_name/">Jméno fyzické osoby (Person name)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="classification/">Klasifikace (Classification)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="place/">Místo (Place)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="organisation/">Organizace (Company)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="gazette-notice-schema/">Oznámení na úřední desce (Notice)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="postal_address/">Poštovní adresa (Postal Address)</a>
 	    </li>
           
         </ul>
@@ -93,7 +153,7 @@
     
       
     
-    <li>Home</li>
+    <li>Obsah</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -103,21 +163,39 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+                <h1 id="oznameni-na-urednich-deskach">Oznámení na úředních deskách</h1>
+<p><strong>Draft 2017-10-30</strong></p>
+<h2 id="plny-model">Plný model</h2>
+<p><img alt="plný model" src="./diagram_full.png" /></p>
+<p>Základ modelu je jedna zpráva na úřední desce: <strong><a href="./gazette-notice-schema/">Oznámení na úřední desce</a></strong></p>
+<h2 id="submodely">Submodely</h2>
+<p>Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze <code>publisher</code>, <code>identifier</code> a <code>url</code> (kde <code>identifier</code> a <code>url</code> mohou být stejné, oboje <code>url</code>).</p>
+<p>V případě, že implementace používá prvky z plného modelu, měly by se jmenovat tak, jak jsou popsány v modelu.</p>
+<p>V implementaci je možné použít i další vlastní prvky, které nejsou popsány v plném modelu.</p>
+<h4 id="anglicke-vs-ceske-nazvy">Anglické vs. české názvy</h4>
+<p>Je silně doporučeno používat anglické názvy proměnných. Specifikace v některých případech obsahuje i české alternativy z historických důvodů (např. <code>zverejneno_od</code> lze použít namísto <code>date_published</code>)</p>
+<h2 id="specifikace-pomoci-json-schema">Specifikace pomocí JSON schema</h2>
+<p>JSON schema modelu (v0.4):</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li><a href="https://michalskop.github.io/docson/#https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json_schema_cs/gazette-notice-schema.json">Interaktivní dokumentace schématu</a></li>
+<li><a href="https://github.com/michalskop/data_standards/tree/master/gazette_notice/json_schema_cs">Popis na Github</a></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="specifikace-pomoci-xsd">Specifikace pomocí XSD</h2>
+<p>TBD **</p>
+<h2 id="serializace-do-csv">Serializace do CSV</h2>
+<p>Při použití formátu CSV se doporučuje použít <a href="http://specs.frictionlessdata.io/table-schema/">Tabular Data Resource</a>, popis takového souboru se doporučuje jako <a href="http://specs.frictionlessdata.io/table-schema/">Tabular Data Package</a></p>
+<p>TBD **</p>
+<h2 id="priklady">Příklady</h2>
+<p>TBD **</p>
+<h2 id="odkazy">Odkazy</h2>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1x2ix9qv1DiXO26lLnvM9c7w83Wg_Wpeu8BP1OsTS1Q4/edit#gid=0">Přehled některých českých implementací</a></li>
+<li><a href="https://github.com/openc/openc-schema/blob/master/schemas/gazette-notice-schema.json">Open Corporates' Gazette Notice</a></li>
+<li>Diagram lze editovat na <a href="https://www.draw.io">Draw.io</a> s použitím <a href="https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/gazette_notice_diagram_full.xml">zdrojového XML</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/16hh30KrV9m6aTY5KWlG5mFqyi07cEMXlWYcWEe8GUKk/edit#gid=0">Mapování na existující standardy - Open Corporates</a></li>
+<li><a href="http://www.popoloproject.com/appendices/survey.html">Existující standardy</a></li>
+<li><a href="https://docs.google.com/document/d/1lejsvjTd86urF37X6H4S1OhP3zRpjuiOkz_kLQNCsTY/edit#">Přehled odkazů ke standardizaci</a></li>
+</ul>
               
             </div>
           </div>
@@ -125,7 +203,7 @@ docs/
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="about/" class="btn btn-neutral float-right" title="O projektu">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="entity/" class="btn btn-neutral float-right" title="Entita (Entity)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -153,7 +231,7 @@ docs/
       
       
       
-        <span style="margin-left: 15px"><a href="about/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="entity/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -167,5 +245,5 @@ docs/
 
 <!--
 MkDocs version : 0.17.0
-Build Date UTC : 2017-10-29 03:01:43
+Build Date UTC : 2017-10-31 01:04:52
 -->
