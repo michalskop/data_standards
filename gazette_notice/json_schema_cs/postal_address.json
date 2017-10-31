@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Poštovní adresa",
+  "description": "Objekt adresa",
+  "type": "object",
+  "properties": {
+    "street_address": {
+      "description": "Ulice a/nebo číslo, např.'347', 'Vinice 347', 'E12'",
+      "type": "string"
+    },
+    "locality": {
+      "description": "Obec",
+      "type": "string"
+    },
+    "postal_code": {
+      "description": "PSČ",
+      "type": "string"
+    },
+    "country": {
+      "description": "Stát",
+      "type": "string"
+    },
+    "country_code": {
+      "description": "Kód země dle ISO 3166-2",
+      "type": "string"
+    },
+    "identifiers": {
+      "description": "Identifikátory, např. číslo dle RÚIAN",
+      "type": ["array", "null"],
+      "items": {
+        "$ref": "identifier.json"
+      }
+    }
+  },
+  "example": {
+        "street_address": "Vinice 347",
+        "locality": "Plasy",
+        "postal_code": "33101",
+        "country_code": "CZ"
+    }
+}

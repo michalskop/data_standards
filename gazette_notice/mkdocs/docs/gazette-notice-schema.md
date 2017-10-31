@@ -21,7 +21,7 @@ Typ: `entity.json`
 
 #### date_published
 
-Alternativy: `date_published`
+Alternativy: `date_published`, `zverejneno_od`
 
 Datum zveřejnění oznámení na úřední desce
 
@@ -29,7 +29,7 @@ Typ: `string`
 
 #### date_unpublished
 
-Alternativy: `date_unpublished`
+Alternativy: `date_unpublished`, `zverejneno_do`
 
 Datum odstranění oznámení z úřední desky
 
@@ -45,7 +45,7 @@ Typ: `array`
 
 #### identifier
 
-Alternativy: `identifier`
+Alternativy: `identifier`, `znacka`
 
 Vlastní identifikátor oznámení na úřední desce, nemusí být unikátní
 
@@ -61,7 +61,7 @@ Typ: `string`
 
 #### publisher
 
-Alternativy: `publisher`
+Alternativy: `publisher`, `organizace`
 
 Majitel úřední desky, např. 'Město Plasy'
 
@@ -77,15 +77,23 @@ Typ: `array`
 
 #### summary
 
-Alternativy: `summary`
+Alternativy: `summary`, `anotace`, `description`
 
 Krátké shrnutí
 
 Typ: `string`
 
+#### title
+
+Alternativy: `title`, `nazev`
+
+Název oznámení
+
+Typ: `string`
+
 #### url
 
-Alternativy: `url`
+Alternativy: `url`, `link`, `dokument`
 
 URL oznámení (lidsky čitelnou zprávou)
 

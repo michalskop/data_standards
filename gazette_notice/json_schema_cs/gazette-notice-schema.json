@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Notice",
+  "name": "Oznámení na úřední desce",
+  "description": "Jedno oznámení na úřední desce",
+  "type": "object",
+  "properties": {
+    "publisher": {
+        "description": "Majitel úřední desky, např. 'Město Plasy'",
+        "$ref": "organisation.json",
+        "alternatives": ["organizace"]
+    },
+    "identifier": {
+      "description#en": "The publisher's identifier for the notice, which may not be unique",
+      "description": "Vlastní identifikátor oznámení na úřední desce, nemusí být unikátní",
+      "type": [
+        "number",
+        "string"
+      ],
+      "alternatives": ["znacka"]
+    },
+    "subjects": {
+      "description": "O kom oznámení pojednává primárně",
+      "type": "array",
+      "items": {
+        "$ref": "entity.json"
+      }
+    },
+    "date_published": {
+      "description": "Datum zveřejnění oznámení na úřední desce",
+      "type": "string",
+      "format": "date",
+      "alternatives": ["zverejneno_od"]
+    },
+    "date_unpublished": {
+      "description": "Datum odstranění oznámení z úřední desky",
+      "type": "string",
+      "format": "date",
+      "alternatives": ["zverejneno_do"]
+    },
+    "creator": {
+        "description": "Původní autor oznámení, např. 'Exekutor XY'",
+        "$ref": "entity.json"
+    },
+    "title": {
+        "description": "Název oznámení",
+        "type": "string",
+        "alternatives": ["nazev"]
+    },
+    "summary": {
+      "description": "Krátké shrnutí",
+      "type": "string",
+      "alternatives": ["anotace", "description"]
+    },
+    "about": {
+        "description": "Obsah oznámení",
+        "type": "object",
+        "properties": {
+            "classification": {
+                "description": "Typ oznámení, klasifikace oznámení, např. agenda",
+                "type": "array",
+                "items": {
+                    "$ref": "classification.json"
+                },
+                "alternatives": ["agenda", "kategorie"]
+            },
+            "body": {
+              "description": "Volný text oznámení",
+              "$ref": "#/definitions/body"
+            },
+            "locations": {
+                "description": "Místa oznámení",
+                "type": "array",
+                "items": {
+                  "$ref": "place.json"
+                }
+            }
+        }
+    },
+    "url": {
+      "description": "URL oznámení (lidsky čitelnou zprávou)",
+      "type": "string",
+      "format": "uri",
+      "alternatives": ["link", "dokument"]
+    },
+    "media_type": {
+      "description": "Media type na URL",
+      "type": "string"
+    },
+    "documents": {
+        "description": "Další dokumenty",
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/document"
+        }
+    }
+  },
+  "required": [
+    "publisher",
+    "identifier",
+    "url"
+  ],
+  "definitions": {
+      "document": {
+          "title": "Document",
+          "description": "Libovolný dokument",
+          "type": "object",
+          "properties": {
+              "url": {
+                "description": "URL dokumentu",
+                "type": "string",
+                "format": "uri"
+              },
+              "media_type": {
+                  "description": "Media type na URL",
+                  "type": "string"
+              },
+              "body": {
+                  "description": "Obsah dokumentu",
+                  "$ref": "#/definitions/body"
+              }
+          }
+      },
+      "body": {
+          "title": "Body",
+          "description": "Vlastní obsah dokumentu",
+          "type": "object",
+          "properties": {
+              "value": {
+                "description": "Obsah",
+                "type": "string"
+              },
+              "media_type": {
+                "description": "Media type obsahu",
+                    "type": "string"
+                  }
+          },
+          "additionalProperties": false,
+          "required": [
+              "value"
+          ]
+      }
+  }
+}

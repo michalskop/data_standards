@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "name": "Entita",
+  "description": "Entita - např. osoba nebo organizace",
+  "required": [
+    "type",
+    "properties"
+  ],
+  "oneOf": [
+    {
+      "name": "Fyzická osoba",
+      "properties": {
+        "type": {
+          "enum": [
+            "person"
+          ]
+         }
+       },
+       "$ref": "./person.json"
+    },
+    {
+      "name": "Organizace",
+      "properties": {
+        "type": {
+          "enum": [
+            "organisation"
+          ]
+        }
+      },
+      "$ref": "./organisation.json"
+    }
+  ],
+  "example": {
+      "type": "organisation",
+      "properties": {
+
+      }
+  }
+}

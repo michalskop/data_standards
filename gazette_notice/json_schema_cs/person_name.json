@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Jméno fyzické osoby",
+  "description": "Jméno fyzické osoby",
+  "oneOf": [
+    {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "non-blank"
+    },
+    {
+      "description": "Jméno osoby jako objekt",
+      "type": "object",
+      "properties": {
+        "given_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "non-blank",
+          "description": "Křestní (obvykle první) jméno nebo jména osoby"
+        },
+        "family_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "non-blank",
+          "description": "Příjmení"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "non-blank",
+          "description": "Titul před jménem, např. 'Mgr.'"
+        },
+        "suffixes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "non-blank",
+          "description": "Libovolné sufixy včetně titulů za jménem, např. 'Ph.D'"
+        }
+      }
+    }
+  ]
+}

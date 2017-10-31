@@ -1,17 +1,28 @@
-# Welcome to MkDocs
+# Oznámení na úředních deskách
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+**Draft 2017-10-30**
 
-## Commands
+## Plný model
+![plný model](./diagram_full.png)
+Základ modelu je jedna zpráva na úřední desce `gazette-notice-schema`.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## Submodely
+Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze `publisher`, `identifier` a `url` (kde `identifier` a `url` mohou být stejné, oboje `url`).
 
-## Project layout
+Ovšem v případě, že implementace používá prvky z plného modelu, měly by se jmenovat tak, jak jsou popsány v modelu.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+V implementaci je možné použít i další vlastní prvky, které nejsou popsány v plném modelu.
+
+#### Anglické vs. české názvy
+Je silně doporučeno používat anglické názvy proměnných. Specifikace v některých případech obsahuje i české alternativy z historických důvodů (např. `zverejneno_od` namísto `date_published`)
+
+## Specifikace pomocí JSON schema
+JSON schema modelu:
+
+## Specifikace pomocí XSD
+TBD **
+
+## Serializace do CSV
+Při použití formátu CSV se doporučuje použít [Tabular Data Resource](http://specs.frictionlessdata.io/table-schema/), popis takového souboru se doporučuje jako [Tabular Data Package](http://specs.frictionlessdata.io/table-schema/)
+
+TBD **

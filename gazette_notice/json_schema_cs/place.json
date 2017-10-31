@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Místo",
+  "description": "Fyzické místo",
+  "anyOf": [
+    {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 2
+    },
+    {
+        "name": "Poštovní adresa",
+        "$ref": "./postal_address.json"
+    },
+    {
+        "name": "Geo souřadnice",
+        "$ref": "./geocoordinates.json"
+    },
+    {
+        "name": "Geoshape",
+        "$ref": "./geoshape.json"
+    },
+    {
+        "name": "Identifikátor",
+        "$ref": "./identifier.json"
+    }
+  ]
+}

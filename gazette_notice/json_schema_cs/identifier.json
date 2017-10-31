@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Identifikátor",
+  "description": "Identifikátor, např. IČ, číslo dle RÚIAN. Identifikátor by měl být řádně definován, např. vydán veřejnou institucí.",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "description": "Unikátní identifikátor vydaný - měl by být unikátní v rámci systému (např. IĆ, RÚIAN/budovy, apod.)",
+      "minLength": 1
+    },
+    "scheme": {
+      "type": "string",
+      "description": "Schéma, v kterém je daný identifikátor. Např. 'IĆ', 'RÚIAN/budovy', apod."
+    }
+  },
+  "required": [
+    "identifier",
+    "scheme"
+  ],
+  "example": {
+      "scheme": "IČ",
+      "identifier": "00258245"
+  }
+}

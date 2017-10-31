@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "name": "Entity",
+  "required": [
+    "type",
+    "properties"
+  ],
+  "oneOf": [
+    {
+      "name": "Person",
+      "properties": {
+        "type": {
+          "enum": [
+            "person"
+          ]
+         }
+       },
+       "$ref": "./person.json"
+    },
+    {
+      "name": "organisation",
+      "properties": {
+        "type": {
+          "enum": [
+            "organisation"
+          ]
+        }
+      },
+      "$ref": "./organisation.json"
+    }
+  ],
+  "example": {
+      "type": "organisation",
+      "properties": {
+
+      }
+  }
+}

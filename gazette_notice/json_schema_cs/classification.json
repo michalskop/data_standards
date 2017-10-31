@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Classification",
+  "description": "Klasifikace ze seznamu (číselníku, apod.)",
+  "name": "Klasifikace",
+  "type": "object",
+  "properties": {
+    "scheme": {
+      "description": "Schéma klasifikace, např. 'ruian/budovy'",
+      "type": "string"
+    },
+    "code": {
+      "description": "Kód, klasifikace",
+      "type": "string"
+    },
+    "name": {
+      "description": "Název pro danou klasifikaci, zvláště pokud hodnota je köd",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "anyOf": [
+    {
+      "required": [
+        "name"
+      ]
+    },
+    {
+      "required": [
+        "code",
+        "scheme"
+      ]
+    }
+  ],
+  "example": {
+      "scheme": "RÚIAN/budovy",
+      "identifier": "4132908"
+  }
+}

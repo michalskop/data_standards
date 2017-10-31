@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "name": "Geoshape, geo tvar",
+    "description": "Geo souřadnice místa",
+    "type": "object",
+    "properties": {
+        "box": {
+            "type": "string",
+            "description": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character."
+        },
+        "circle": {
+            "type": "string",
+            "description": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters."
+        },
+        "line": {
+            "type": "string",
+            "description": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space."
+        },
+        "polygon": {
+            "type": "string",
+            "description": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical."
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A company",
+  "name": "Company",
+  "@source": "https://github.com/openc/openc-schema/blob/master/schemas/includes/organisation.json",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Legal name of the company",
+      "minLength": 1,
+      "alternatives": ["jmeno"]
+    },
+    "registered_address": {
+        "description": "Registered address of the organisation",
+      "$ref": "place.json",
+      "alternatives": ["adresa"]
+    },
+    "identifiers": {
+        "description": "Given identifiers",
+      "type": "array",
+      "items": {
+        "$ref": "identifier.json"
+        },
+      "alternatives": ["idenfitikatory"]
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "name"
+      ]
+    },
+    {
+      "required": [
+        "identifiers"
+      ]
+    }
+  ],
+  "example": {
+      "name": "Město Plasy",
+      "identifiers": [
+          {
+              "scheme": "IČ",
+              "identifier": "00258245"
+          }
+      ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Place",
+  "description": "A physical place",
+  "anyOf": [
+    {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 2
+    },
+    {
+        "name": "Postal Address",
+        "$ref": "./postal_address.json"
+    },
+    {
+        "name": "Geocoordinates",
+        "$ref": "./geocoordinates.json"
+    },
+    {
+        "name": "Geoshape",
+        "$ref": "./geoshape.json"
+    },
+    {
+        "name": "Identifier",
+        "$ref": "./identifier.json"
+    }
+  ]
+}

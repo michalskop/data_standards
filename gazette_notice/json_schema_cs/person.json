@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "Fyzická osoba",
+  "description": "Fyzická osoba",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "$ref": "person_name.json"
+    },
+    "registered_address": {
+      "description": "Adresa",
+      "$ref": "place.json"
+    },
+    "date_of_birth": {
+        "description": "Datum narození ve fromátu ISO 8601",
+        "type": "string",
+        "format": "date"
+    },
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "$ref": "identifier.json"
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

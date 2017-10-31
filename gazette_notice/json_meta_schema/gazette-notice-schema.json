@@ -10,7 +10,8 @@
     "publisher": {
         "description@en": "The publisher of the notice",
         "description@cs": "Majitel úřední desky, např. 'Město Plasy'",
-        "$ref": "organisation.json"
+        "$ref": "organisation.json",
+        "alternatives": ["organizace"]
     },
     "identifier": {
       "description#en": "The publisher's identifier for the notice, which may not be unique",
@@ -18,7 +19,8 @@
       "type": [
         "number",
         "string"
-      ]
+      ],
+      "alternatives": ["znacka"]
     },
     "subjects": {
       "description@en": "The entities that the notice is primarily about",
@@ -32,23 +34,32 @@
       "description@en": "The date of publication of the notice in the gazette",
       "description@cs": "Datum zveřejnění oznámení na úřední desce",
       "type": "string",
-      "format": "date"
+      "format": "date",
+      "alternatives": ["zverejneno_od"]
     },
     "date_unpublished": {
       "description@en": "The date of unpublication of the notice from the gazette",
       "description@cs": "Datum odstranění oznámení z úřední desky",
       "type": "string",
-      "format": "date"
+      "format": "date",
+      "alternatives": ["zverejneno_do"]
     },
     "creator": {
         "description@en": "The original creator/author of the notice.",
         "description@cs": "Původní autor oznámení, např. 'Exekutor XY'",
         "$ref": "entity.json"
     },
+    "title": {
+        "description@en": "The title of the notice",
+        "description@cs": "Název oznámení",
+        "type": "string",
+        "alternatives": ["nazev"]
+    },
     "summary": {
       "description@en": "A brief summary of the notice's content",
       "description@cs": "Krátké shrnutí",
-      "type": "string"
+      "type": "string",
+      "alternatives": ["anotace", "description"]
     },
     "about": {
         "description@en": "The content of the notice",
@@ -61,7 +72,8 @@
                 "type": "array",
                 "items": {
                     "$ref": "classification.json"
-                }
+                },
+                "alternatives": ["agenda", "kategorie"]
             },
             "body": {
               "description@en": "The unstructured prose content",
@@ -82,7 +94,8 @@
       "description@en": "The URL of the notice, at which a human may verify the data",
       "description@cs": "URL oznámení (lidsky čitelnou zprávou)",
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "alternatives": ["link", "dokument"]
     },
     "media_type": {
       "description@en": "The media type of the URL resource",
