@@ -1,0 +1,449 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00edch desk\u00e1ch\n\n\nDraft 2017-10-30\n\n\nPln\u00fd\u00a0model\n\n\n\n\nZ\u00e1klad modelu je jedna zpr\u00e1va na \u00fa\u0159edn\u00ed\u00a0desce: \nOzn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce\n\n\nSubmodely\n\n\nPraktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze \npublisher\n, \nidentifier\n a \nurl\n (kde \nidentifier\n a \nurl\n mohou b\u00fdt stejn\u00e9, oboje \nurl\n).\n\n\nV p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.\n\n\nV implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.\n\n\nAnglick\u00e9 vs. \u010desk\u00e9 n\u00e1zvy\n\n\nJe siln\u011b\u00a0doporu\u010deno pou\u017e\u00edvat anglick\u00e9 n\u00e1zvy prom\u011bnn\u00fdch. Specifikace v n\u011bkter\u00fdch p\u0159\u00edpadech obsahuje i \u010desk\u00e9 alternativy z historick\u00fdch d\u016fvod\u016f (nap\u0159. \nzverejneno_od\n lze pou\u017e\u00edt nam\u00edsto \ndate_published\n)\n\n\nSpecifikace pomoc\u00ed JSON schema\n\n\nJSON schema modelu (v0.4):\n\n\n\n\nInteraktivn\u00ed dokumentace sch\u00e9matu\n\n\nPopis na Github\n\n\n\n\nSpecifikace pomoc\u00ed XSD\n\n\nTBD **\n\n\nSerializace do CSV\n\n\nP\u0159i pou\u017eit\u00ed form\u00e1tu CSV se doporu\u010duje pou\u017e\u00edt \nTabular Data Resource\n, popis takov\u00e9ho souboru se doporu\u010duje jako \nTabular Data Package\n\n\nTBD **\n\n\nP\u0159\u00edklady\n\n\nTBD **\n\n\nOdkazy\n\n\n\n\nP\u0159ehled n\u011bkter\u00fdch \u010desk\u00fdch implementac\u00ed\n\n\nOpen Corporates' Gazette Notice\n\n\nDiagram lze editovat na \nDraw.io\n s pou\u017eit\u00edm \nzdrojov\u00e9ho XML\n\n\nMapov\u00e1n\u00ed na existuj\u00edc\u00ed standardy - Open Corporates\n\n\nExistuj\u00edc\u00ed\u00a0standardy\n\n\nP\u0159ehled odkaz\u016f ke standardizaci",
+            "title": "Obsah"
+        },
+        {
+            "location": "/#oznameni-na-urednich-deskach",
+            "text": "Draft 2017-10-30",
+            "title": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00edch desk\u00e1ch"
+        },
+        {
+            "location": "/#plny-model",
+            "text": "Z\u00e1klad modelu je jedna zpr\u00e1va na \u00fa\u0159edn\u00ed\u00a0desce:  Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce",
+            "title": "Pln\u00fd\u00a0model"
+        },
+        {
+            "location": "/#submodely",
+            "text": "Praktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze  publisher ,  identifier  a  url  (kde  identifier  a  url  mohou b\u00fdt stejn\u00e9, oboje  url ).  V p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.  V implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.",
+            "title": "Submodely"
+        },
+        {
+            "location": "/#anglicke-vs-ceske-nazvy",
+            "text": "Je siln\u011b\u00a0doporu\u010deno pou\u017e\u00edvat anglick\u00e9 n\u00e1zvy prom\u011bnn\u00fdch. Specifikace v n\u011bkter\u00fdch p\u0159\u00edpadech obsahuje i \u010desk\u00e9 alternativy z historick\u00fdch d\u016fvod\u016f (nap\u0159.  zverejneno_od  lze pou\u017e\u00edt nam\u00edsto  date_published )",
+            "title": "Anglick\u00e9 vs. \u010desk\u00e9 n\u00e1zvy"
+        },
+        {
+            "location": "/#specifikace-pomoci-json-schema",
+            "text": "JSON schema modelu (v0.4):   Interaktivn\u00ed dokumentace sch\u00e9matu  Popis na Github",
+            "title": "Specifikace pomoc\u00ed JSON schema"
+        },
+        {
+            "location": "/#specifikace-pomoci-xsd",
+            "text": "TBD **",
+            "title": "Specifikace pomoc\u00ed XSD"
+        },
+        {
+            "location": "/#serializace-do-csv",
+            "text": "P\u0159i pou\u017eit\u00ed form\u00e1tu CSV se doporu\u010duje pou\u017e\u00edt  Tabular Data Resource , popis takov\u00e9ho souboru se doporu\u010duje jako  Tabular Data Package  TBD **",
+            "title": "Serializace do CSV"
+        },
+        {
+            "location": "/#priklady",
+            "text": "TBD **",
+            "title": "P\u0159\u00edklady"
+        },
+        {
+            "location": "/#odkazy",
+            "text": "P\u0159ehled n\u011bkter\u00fdch \u010desk\u00fdch implementac\u00ed  Open Corporates' Gazette Notice  Diagram lze editovat na  Draw.io  s pou\u017eit\u00edm  zdrojov\u00e9ho XML  Mapov\u00e1n\u00ed na existuj\u00edc\u00ed standardy - Open Corporates  Existuj\u00edc\u00ed\u00a0standardy  P\u0159ehled odkaz\u016f ke standardizaci",
+            "title": "Odkazy"
+        },
+        {
+            "location": "/entity/",
+            "text": "Entita \n(Entity)\n\n\nEntita - nap\u0159. osoba nebo organizace\n\n\nentity.json\n\n\nFyzick\u00e1 osoba \n(Person)\n\n\nOrganizace \n(organisation)\n\n\nJeden z:\n\n\ntype\n\n\nAlternativy: \ntype\n\n\nTyp: \n\n\ntype\n\n\nAlternativy: \ntype\n\n\nTyp: \n\n\nP\u0159\u00edklad\n\n\n{\n    \"type\": \"organisation\",\n    \"properties\": {}\n}",
+            "title": "Entita (Entity)"
+        },
+        {
+            "location": "/entity/#entita-entity",
+            "text": "Entita - nap\u0159. osoba nebo organizace  entity.json",
+            "title": "Entita (Entity)"
+        },
+        {
+            "location": "/entity/#fyzicka-osoba-person",
+            "text": "",
+            "title": "Fyzick\u00e1 osoba (Person)"
+        },
+        {
+            "location": "/entity/#organizace-organisation",
+            "text": "",
+            "title": "Organizace (organisation)"
+        },
+        {
+            "location": "/entity/#jeden-z",
+            "text": "",
+            "title": "Jeden z:"
+        },
+        {
+            "location": "/entity/#type",
+            "text": "Alternativy:  type  Typ:",
+            "title": "type"
+        },
+        {
+            "location": "/entity/#type_1",
+            "text": "Alternativy:  type  Typ:",
+            "title": "type"
+        },
+        {
+            "location": "/entity/#priklad",
+            "text": "{\n    \"type\": \"organisation\",\n    \"properties\": {}\n}",
+            "title": "P\u0159\u00edklad"
+        },
+        {
+            "location": "/person/",
+            "text": "Fyzick\u00e1 osoba \n(Person)\n\n\nFyzick\u00e1 osoba\n\n\nperson.json\n\n\ndate_of_birth\n\n\nAlternativy: \ndate_of_birth\n\n\nDatum narozen\u00ed ve from\u00e1tu ISO 8601\n\n\nTyp: \nstring\n\n\nidentifiers\n\n\nAlternativy: \nidentifiers\n\n\nTyp: \narray\n\n\nname\n\n\nAlternativy: \nname\n\n\nTyp: \nperson_name.json\n\n\nregistered_address\n\n\nAlternativy: \nregistered_address\n\n\nAdresa\n\n\nTyp: \nplace.json",
+            "title": "Fyzick\u00e1 osoba (Person)"
+        },
+        {
+            "location": "/person/#fyzicka-osoba-person",
+            "text": "Fyzick\u00e1 osoba  person.json",
+            "title": "Fyzick\u00e1 osoba (Person)"
+        },
+        {
+            "location": "/person/#date_of_birth",
+            "text": "Alternativy:  date_of_birth  Datum narozen\u00ed ve from\u00e1tu ISO 8601  Typ:  string",
+            "title": "date_of_birth"
+        },
+        {
+            "location": "/person/#identifiers",
+            "text": "Alternativy:  identifiers  Typ:  array",
+            "title": "identifiers"
+        },
+        {
+            "location": "/person/#name",
+            "text": "Alternativy:  name  Typ:  person_name.json",
+            "title": "name"
+        },
+        {
+            "location": "/person/#registered_address",
+            "text": "Alternativy:  registered_address  Adresa  Typ:  place.json",
+            "title": "registered_address"
+        },
+        {
+            "location": "/geocoordinates/",
+            "text": "Geo sou\u0159adnice \n(Geocoordinates)\n\n\nGeo sou\u0159adnice adresy\n\n\ngeocoordinates.json\n\n\nlatitude\n\n\nAlternativy: \nlatitude\n\n\nTyp: \nnumber\n\n\nlongitude\n\n\nAlternativy: \nlongitude\n\n\nTyp: \nnumber\n\n\nP\u0159\u00edklad\n\n\n{\n    \"latitude\": 49.9388,\n    \"longitude\": 13.3895\n}",
+            "title": "Geo sou\u0159adnice (Geocoordinates)"
+        },
+        {
+            "location": "/geocoordinates/#geo-souradnice-geocoordinates",
+            "text": "Geo sou\u0159adnice adresy  geocoordinates.json",
+            "title": "Geo sou\u0159adnice (Geocoordinates)"
+        },
+        {
+            "location": "/geocoordinates/#latitude",
+            "text": "Alternativy:  latitude  Typ:  number",
+            "title": "latitude"
+        },
+        {
+            "location": "/geocoordinates/#longitude",
+            "text": "Alternativy:  longitude  Typ:  number",
+            "title": "longitude"
+        },
+        {
+            "location": "/geocoordinates/#priklad",
+            "text": "{\n    \"latitude\": 49.9388,\n    \"longitude\": 13.3895\n}",
+            "title": "P\u0159\u00edklad"
+        },
+        {
+            "location": "/geoshape/",
+            "text": "Geoshape, geo tvar \n(Geoshape)\n\n\nGeo sou\u0159adnice m\u00edsta\n\n\ngeoshape.json\n\n\nbox\n\n\nAlternativy: \nbox\n\n\nA box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.\n\n\nTyp: \nstring\n\n\ncircle\n\n\nAlternativy: \ncircle\n\n\nA circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.\n\n\nTyp: \nstring\n\n\nline\n\n\nAlternativy: \nline\n\n\nA line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.\n\n\nTyp: \nstring\n\n\npolygon\n\n\nAlternativy: \npolygon\n\n\nA polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.\n\n\nTyp: \nstring",
+            "title": "Geoshape, geo tvar (Geoshape)"
+        },
+        {
+            "location": "/geoshape/#geoshape-geo-tvar-geoshape",
+            "text": "Geo sou\u0159adnice m\u00edsta  geoshape.json",
+            "title": "Geoshape, geo tvar (Geoshape)"
+        },
+        {
+            "location": "/geoshape/#box",
+            "text": "Alternativy:  box  A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.  Typ:  string",
+            "title": "box"
+        },
+        {
+            "location": "/geoshape/#circle",
+            "text": "Alternativy:  circle  A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.  Typ:  string",
+            "title": "circle"
+        },
+        {
+            "location": "/geoshape/#line",
+            "text": "Alternativy:  line  A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.  Typ:  string",
+            "title": "line"
+        },
+        {
+            "location": "/geoshape/#polygon",
+            "text": "Alternativy:  polygon  A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.  Typ:  string",
+            "title": "polygon"
+        },
+        {
+            "location": "/identifier/",
+            "text": "Identifik\u00e1tor \n(Identifier)\n\n\nIdentifik\u00e1tor, nap\u0159. I\u010c, \u010d\u00edslo dle R\u00daIAN. Identifik\u00e1tor by m\u011bl b\u00fdt \u0159\u00e1dn\u011b definov\u00e1n, nap\u0159. vyd\u00e1n ve\u0159ejnou instituc\u00ed.\n\n\nidentifier.json\n\n\nidentifier\n\n\nAlternativy: \nidentifier\n\n\nUnik\u00e1tn\u00ed identifik\u00e1tor vydan\u00fd - m\u011bl by b\u00fdt unik\u00e1tn\u00ed v r\u00e1mci syst\u00e9mu (nap\u0159. I\u0106, R\u00daIAN/budovy, apod.)\n\n\nTyp: \nstring\n\n\nscheme\n\n\nAlternativy: \nscheme\n\n\nSch\u00e9ma, v kter\u00e9m je dan\u00fd identifik\u00e1tor. Nap\u0159. 'I\u0106', 'R\u00daIAN/budovy', apod.\n\n\nTyp: \nstring\n\n\nP\u0159\u00edklad\n\n\n{\n    \"identifier\": \"00258245\",\n    \"scheme\": \"I\u010c\"\n}",
+            "title": "Identifik\u00e1tor (Identifier)"
+        },
+        {
+            "location": "/identifier/#identifikator-identifier",
+            "text": "Identifik\u00e1tor, nap\u0159. I\u010c, \u010d\u00edslo dle R\u00daIAN. Identifik\u00e1tor by m\u011bl b\u00fdt \u0159\u00e1dn\u011b definov\u00e1n, nap\u0159. vyd\u00e1n ve\u0159ejnou instituc\u00ed.  identifier.json",
+            "title": "Identifik\u00e1tor (Identifier)"
+        },
+        {
+            "location": "/identifier/#identifier",
+            "text": "Alternativy:  identifier  Unik\u00e1tn\u00ed identifik\u00e1tor vydan\u00fd - m\u011bl by b\u00fdt unik\u00e1tn\u00ed v r\u00e1mci syst\u00e9mu (nap\u0159. I\u0106, R\u00daIAN/budovy, apod.)  Typ:  string",
+            "title": "identifier"
+        },
+        {
+            "location": "/identifier/#scheme",
+            "text": "Alternativy:  scheme  Sch\u00e9ma, v kter\u00e9m je dan\u00fd identifik\u00e1tor. Nap\u0159. 'I\u0106', 'R\u00daIAN/budovy', apod.  Typ:  string",
+            "title": "scheme"
+        },
+        {
+            "location": "/identifier/#priklad",
+            "text": "{\n    \"identifier\": \"00258245\",\n    \"scheme\": \"I\u010c\"\n}",
+            "title": "P\u0159\u00edklad"
+        },
+        {
+            "location": "/person_name/",
+            "text": "Jm\u00e9no fyzick\u00e9 osoby \n(Person name)\n\n\nJm\u00e9no fyzick\u00e9 osoby\n\n\nperson_name.json\n\nJm\u00e9no osoby jako objekt\n\n\nJeden z:\n\n\nstring\n\n\nnull\n\n\nfamily_name\n\n\nAlternativy: \nfamily_name\n\n\nP\u0159\u00edjmen\u00ed\n\n\nTyp: \n\n\ngiven_name\n\n\nAlternativy: \ngiven_name\n\n\nK\u0159estn\u00ed (obvykle prvn\u00ed) jm\u00e9no nebo jm\u00e9na osoby\n\n\nTyp: \n\n\nsuffixes\n\n\nAlternativy: \nsuffixes\n\n\nLibovoln\u00e9 sufixy v\u010detn\u011b\u00a0titul\u016f za jm\u00e9nem, nap\u0159. 'Ph.D'\n\n\nTyp: \n\n\ntitle\n\n\nAlternativy: \ntitle\n\n\nTitul p\u0159ed jm\u00e9nem, nap\u0159. 'Mgr.'\n\n\nTyp:",
+            "title": "Jm\u00e9no fyzick\u00e9 osoby (Person name)"
+        },
+        {
+            "location": "/person_name/#jmeno-fyzicke-osoby-person-name",
+            "text": "Jm\u00e9no fyzick\u00e9 osoby  person_name.json \nJm\u00e9no osoby jako objekt",
+            "title": "Jm\u00e9no fyzick\u00e9 osoby (Person name)"
+        },
+        {
+            "location": "/person_name/#jeden-z",
+            "text": "string  null",
+            "title": "Jeden z:"
+        },
+        {
+            "location": "/person_name/#family_name",
+            "text": "Alternativy:  family_name  P\u0159\u00edjmen\u00ed  Typ:",
+            "title": "family_name"
+        },
+        {
+            "location": "/person_name/#given_name",
+            "text": "Alternativy:  given_name  K\u0159estn\u00ed (obvykle prvn\u00ed) jm\u00e9no nebo jm\u00e9na osoby  Typ:",
+            "title": "given_name"
+        },
+        {
+            "location": "/person_name/#suffixes",
+            "text": "Alternativy:  suffixes  Libovoln\u00e9 sufixy v\u010detn\u011b\u00a0titul\u016f za jm\u00e9nem, nap\u0159. 'Ph.D'  Typ:",
+            "title": "suffixes"
+        },
+        {
+            "location": "/person_name/#title",
+            "text": "Alternativy:  title  Titul p\u0159ed jm\u00e9nem, nap\u0159. 'Mgr.'  Typ:",
+            "title": "title"
+        },
+        {
+            "location": "/classification/",
+            "text": "Klasifikace \n(Classification)\n\n\nKlasifikace ze seznamu (\u010d\u00edseln\u00edku, apod.)\n\n\nclassification.json\n\n\ncode\n\n\nAlternativy: \ncode\n\n\nK\u00f3d, klasifikace\n\n\nTyp: \nstring\n\n\nname\n\n\nAlternativy: \nname\n\n\nN\u00e1zev pro danou klasifikaci, zvl\u00e1\u0161t\u011b pokud hodnota je k\u00f6d\n\n\nTyp: \nstring\n\n\nscheme\n\n\nAlternativy: \nscheme\n\n\nSch\u00e9ma klasifikace, nap\u0159. 'ruian/budovy'\n\n\nTyp: \nstring\n\n\nP\u0159\u00edklad\n\n\n{\n    \"identifier\": \"4132908\",\n    \"scheme\": \"R\u00daIAN/budovy\"\n}",
+            "title": "Klasifikace (Classification)"
+        },
+        {
+            "location": "/classification/#klasifikace-classification",
+            "text": "Klasifikace ze seznamu (\u010d\u00edseln\u00edku, apod.)  classification.json",
+            "title": "Klasifikace (Classification)"
+        },
+        {
+            "location": "/classification/#code",
+            "text": "Alternativy:  code  K\u00f3d, klasifikace  Typ:  string",
+            "title": "code"
+        },
+        {
+            "location": "/classification/#name",
+            "text": "Alternativy:  name  N\u00e1zev pro danou klasifikaci, zvl\u00e1\u0161t\u011b pokud hodnota je k\u00f6d  Typ:  string",
+            "title": "name"
+        },
+        {
+            "location": "/classification/#scheme",
+            "text": "Alternativy:  scheme  Sch\u00e9ma klasifikace, nap\u0159. 'ruian/budovy'  Typ:  string",
+            "title": "scheme"
+        },
+        {
+            "location": "/classification/#priklad",
+            "text": "{\n    \"identifier\": \"4132908\",\n    \"scheme\": \"R\u00daIAN/budovy\"\n}",
+            "title": "P\u0159\u00edklad"
+        },
+        {
+            "location": "/place/",
+            "text": "M\u00edsto \n(Place)\n\n\nFyzick\u00e9 m\u00edsto\n\n\nplace.json\n\n\nPo\u0161tovn\u00ed\u00a0adresa \n(Postal Address)\n\n\nGeo sou\u0159adnice \n(Geocoordinates)\n\n\nGeoshape \n(Geoshape)\n\n\nIdentifik\u00e1tor \n(Identifier)\n\n\nLibovoln\u00fd z:\n\n\nstring\n\n\nnull",
+            "title": "M\u00edsto (Place)"
+        },
+        {
+            "location": "/place/#misto-place",
+            "text": "Fyzick\u00e9 m\u00edsto  place.json",
+            "title": "M\u00edsto (Place)"
+        },
+        {
+            "location": "/place/#postovni-adresa-postal-address",
+            "text": "",
+            "title": "Po\u0161tovn\u00ed\u00a0adresa (Postal Address)"
+        },
+        {
+            "location": "/place/#geo-souradnice-geocoordinates",
+            "text": "",
+            "title": "Geo sou\u0159adnice (Geocoordinates)"
+        },
+        {
+            "location": "/place/#geoshape-geoshape",
+            "text": "",
+            "title": "Geoshape (Geoshape)"
+        },
+        {
+            "location": "/place/#identifikator-identifier",
+            "text": "",
+            "title": "Identifik\u00e1tor (Identifier)"
+        },
+        {
+            "location": "/place/#libovolny-z",
+            "text": "string  null",
+            "title": "Libovoln\u00fd z:"
+        },
+        {
+            "location": "/organisation/",
+            "text": "Organizace \n(Company)\n\n\nOrganizace (pr\u00e1vnick\u00e1 osoba)\n\n\norganisation.json\n\n\nidentifiers\n\n\nAlternativy: \nidentifiers\n, \nidenfitikatory\n\n\nIdentifik\u00e1tory, nap\u0159. I\u010c\n\n\nTyp: \narray\n\n\nname\n\n\nAlternativy: \nname\n, \njmeno\n\n\nJm\u00e9no organizace (pr\u00e1vnick\u00e9 osoby)\n\n\nTyp: \nstring\n\n\nregistered_address\n\n\nAlternativy: \nregistered_address\n, \nadresa\n\n\nAdresa organizace (pr\u00e1vnick\u00e9 osoby)\n\n\nTyp: \nplace.json\n\n\nP\u0159\u00edklad\n\n\n{\n    \"identifiers\": [\n        {\n            \"identifier\": \"00258245\",\n            \"scheme\": \"I\u010c\"\n        }\n    ],\n    \"name\": \"M\u011bsto Plasy\"\n}",
+            "title": "Organizace (Company)"
+        },
+        {
+            "location": "/organisation/#organizace-company",
+            "text": "Organizace (pr\u00e1vnick\u00e1 osoba)  organisation.json",
+            "title": "Organizace (Company)"
+        },
+        {
+            "location": "/organisation/#identifiers",
+            "text": "Alternativy:  identifiers ,  idenfitikatory  Identifik\u00e1tory, nap\u0159. I\u010c  Typ:  array",
+            "title": "identifiers"
+        },
+        {
+            "location": "/organisation/#name",
+            "text": "Alternativy:  name ,  jmeno  Jm\u00e9no organizace (pr\u00e1vnick\u00e9 osoby)  Typ:  string",
+            "title": "name"
+        },
+        {
+            "location": "/organisation/#registered_address",
+            "text": "Alternativy:  registered_address ,  adresa  Adresa organizace (pr\u00e1vnick\u00e9 osoby)  Typ:  place.json",
+            "title": "registered_address"
+        },
+        {
+            "location": "/organisation/#priklad",
+            "text": "{\n    \"identifiers\": [\n        {\n            \"identifier\": \"00258245\",\n            \"scheme\": \"I\u010c\"\n        }\n    ],\n    \"name\": \"M\u011bsto Plasy\"\n}",
+            "title": "P\u0159\u00edklad"
+        },
+        {
+            "location": "/gazette-notice-schema/",
+            "text": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed\u00a0desce \n(Notice)\n\n\nJedno ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce\n\n\ngazette-notice-schema.json\n\n\nabout\n\n\nAlternativy: \nabout\n\n\nObsah ozn\u00e1men\u00ed\n\n\nTyp: \nobject\n\n\ncreator\n\n\nAlternativy: \ncreator\n\n\nP\u016fvodn\u00ed autor ozn\u00e1men\u00ed, nap\u0159. 'Exekutor XY'\n\n\nTyp: \nentity.json\n\n\ndate_published\n\n\nAlternativy: \ndate_published\n, \nzverejneno_od\n\n\nDatum zve\u0159ejn\u011bn\u00ed ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce\n\n\nTyp: \nstring\n\n\ndate_unpublished\n\n\nAlternativy: \ndate_unpublished\n, \nzverejneno_do\n\n\nDatum odstran\u011bn\u00ed ozn\u00e1men\u00ed z \u00fa\u0159edn\u00ed desky\n\n\nTyp: \nstring\n\n\ndocuments\n\n\nAlternativy: \ndocuments\n\n\nDal\u0161\u00ed dokumenty\n\n\nTyp: \narray\n\n\nidentifier\n\n\nAlternativy: \nidentifier\n, \nznacka\n\n\nVlastn\u00ed identifik\u00e1tor ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce, nemus\u00ed b\u00fdt unik\u00e1tn\u00ed\n\n\nTyp: \n\n\nmedia_type\n\n\nAlternativy: \nmedia_type\n\n\nMedia type na URL\n\n\nTyp: \nstring\n\n\npublisher\n\n\nAlternativy: \npublisher\n, \norganizace\n\n\nMajitel \u00fa\u0159edn\u00ed desky, nap\u0159. 'M\u011bsto Plasy'\n\n\nTyp: \norganisation.json\n\n\nsubjects\n\n\nAlternativy: \nsubjects\n\n\nO kom ozn\u00e1men\u00ed pojedn\u00e1v\u00e1 prim\u00e1rn\u011b\n\n\nTyp: \narray\n\n\nsummary\n\n\nAlternativy: \nsummary\n, \nanotace\n, \ndescription\n\n\nKr\u00e1tk\u00e9 shrnut\u00ed\n\n\nTyp: \nstring\n\n\ntitle\n\n\nAlternativy: \ntitle\n, \nnazev\n\n\nN\u00e1zev ozn\u00e1men\u00ed\n\n\nTyp: \nstring\n\n\nurl\n\n\nAlternativy: \nurl\n, \nlink\n, \ndokument\n\n\nURL ozn\u00e1men\u00ed (lidsky \u010ditelnou zpr\u00e1vou)\n\n\nTyp: \nstring",
+            "title": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed\u00a0desce (Notice)"
+        },
+        {
+            "location": "/gazette-notice-schema/#oznameni-na-uredni-desce-notice",
+            "text": "Jedno ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce  gazette-notice-schema.json",
+            "title": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed\u00a0desce (Notice)"
+        },
+        {
+            "location": "/gazette-notice-schema/#about",
+            "text": "Alternativy:  about  Obsah ozn\u00e1men\u00ed  Typ:  object",
+            "title": "about"
+        },
+        {
+            "location": "/gazette-notice-schema/#creator",
+            "text": "Alternativy:  creator  P\u016fvodn\u00ed autor ozn\u00e1men\u00ed, nap\u0159. 'Exekutor XY'  Typ:  entity.json",
+            "title": "creator"
+        },
+        {
+            "location": "/gazette-notice-schema/#date_published",
+            "text": "Alternativy:  date_published ,  zverejneno_od  Datum zve\u0159ejn\u011bn\u00ed ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce  Typ:  string",
+            "title": "date_published"
+        },
+        {
+            "location": "/gazette-notice-schema/#date_unpublished",
+            "text": "Alternativy:  date_unpublished ,  zverejneno_do  Datum odstran\u011bn\u00ed ozn\u00e1men\u00ed z \u00fa\u0159edn\u00ed desky  Typ:  string",
+            "title": "date_unpublished"
+        },
+        {
+            "location": "/gazette-notice-schema/#documents",
+            "text": "Alternativy:  documents  Dal\u0161\u00ed dokumenty  Typ:  array",
+            "title": "documents"
+        },
+        {
+            "location": "/gazette-notice-schema/#identifier",
+            "text": "Alternativy:  identifier ,  znacka  Vlastn\u00ed identifik\u00e1tor ozn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce, nemus\u00ed b\u00fdt unik\u00e1tn\u00ed  Typ:",
+            "title": "identifier"
+        },
+        {
+            "location": "/gazette-notice-schema/#media_type",
+            "text": "Alternativy:  media_type  Media type na URL  Typ:  string",
+            "title": "media_type"
+        },
+        {
+            "location": "/gazette-notice-schema/#publisher",
+            "text": "Alternativy:  publisher ,  organizace  Majitel \u00fa\u0159edn\u00ed desky, nap\u0159. 'M\u011bsto Plasy'  Typ:  organisation.json",
+            "title": "publisher"
+        },
+        {
+            "location": "/gazette-notice-schema/#subjects",
+            "text": "Alternativy:  subjects  O kom ozn\u00e1men\u00ed pojedn\u00e1v\u00e1 prim\u00e1rn\u011b  Typ:  array",
+            "title": "subjects"
+        },
+        {
+            "location": "/gazette-notice-schema/#summary",
+            "text": "Alternativy:  summary ,  anotace ,  description  Kr\u00e1tk\u00e9 shrnut\u00ed  Typ:  string",
+            "title": "summary"
+        },
+        {
+            "location": "/gazette-notice-schema/#title",
+            "text": "Alternativy:  title ,  nazev  N\u00e1zev ozn\u00e1men\u00ed  Typ:  string",
+            "title": "title"
+        },
+        {
+            "location": "/gazette-notice-schema/#url",
+            "text": "Alternativy:  url ,  link ,  dokument  URL ozn\u00e1men\u00ed (lidsky \u010ditelnou zpr\u00e1vou)  Typ:  string",
+            "title": "url"
+        },
+        {
+            "location": "/postal_address/",
+            "text": "Po\u0161tovn\u00ed\u00a0adresa \n(Postal Address)\n\n\nObjekt adresa\n\n\npostal_address.json\n\n\ncountry\n\n\nAlternativy: \ncountry\n\n\nSt\u00e1t\n\n\nTyp: \nstring\n\n\ncountry_code\n\n\nAlternativy: \ncountry_code\n\n\nK\u00f3d zem\u011b dle ISO 3166-2\n\n\nTyp: \nstring\n\n\nidentifiers\n\n\nAlternativy: \nidentifiers\n\n\nIdentifik\u00e1tory, nap\u0159. \u010d\u00edslo dle R\u00daIAN\n\n\nTyp: \n\n\nlocality\n\n\nAlternativy: \nlocality\n\n\nObec\n\n\nTyp: \nstring\n\n\npostal_code\n\n\nAlternativy: \npostal_code\n\n\nPS\u010c\n\n\nTyp: \nstring\n\n\nstreet_address\n\n\nAlternativy: \nstreet_address\n\n\nUlice a/nebo \u010d\u00edslo, nap\u0159.'347', 'Vinice 347', 'E12'\n\n\nTyp: \nstring\n\n\nP\u0159\u00edklad\n\n\n{\n    \"postal_code\": \"33101\",\n    \"country_code\": \"CZ\",\n    \"locality\": \"Plasy\",\n    \"street_address\": \"Vinice 347\"\n}",
+            "title": "Po\u0161tovn\u00ed\u00a0adresa (Postal Address)"
+        },
+        {
+            "location": "/postal_address/#postovni-adresa-postal-address",
+            "text": "Objekt adresa  postal_address.json",
+            "title": "Po\u0161tovn\u00ed\u00a0adresa (Postal Address)"
+        },
+        {
+            "location": "/postal_address/#country",
+            "text": "Alternativy:  country  St\u00e1t  Typ:  string",
+            "title": "country"
+        },
+        {
+            "location": "/postal_address/#country_code",
+            "text": "Alternativy:  country_code  K\u00f3d zem\u011b dle ISO 3166-2  Typ:  string",
+            "title": "country_code"
+        },
+        {
+            "location": "/postal_address/#identifiers",
+            "text": "Alternativy:  identifiers  Identifik\u00e1tory, nap\u0159. \u010d\u00edslo dle R\u00daIAN  Typ:",
+            "title": "identifiers"
+        },
+        {
+            "location": "/postal_address/#locality",
+            "text": "Alternativy:  locality  Obec  Typ:  string",
+            "title": "locality"
+        },
+        {
+            "location": "/postal_address/#postal_code",
+            "text": "Alternativy:  postal_code  PS\u010c  Typ:  string",
+            "title": "postal_code"
+        },
+        {
+            "location": "/postal_address/#street_address",
+            "text": "Alternativy:  street_address  Ulice a/nebo \u010d\u00edslo, nap\u0159.'347', 'Vinice 347', 'E12'  Typ:  string",
+            "title": "street_address"
+        },
+        {
+            "location": "/postal_address/#priklad",
+            "text": "{\n    \"postal_code\": \"33101\",\n    \"country_code\": \"CZ\",\n    \"locality\": \"Plasy\",\n    \"street_address\": \"Vinice 347\"\n}",
+            "title": "P\u0159\u00edklad"
+        }
+    ]
+}
