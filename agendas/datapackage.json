@@ -1,0 +1,70 @@
+{
+    "name": "terms-agendas",
+    "description": "Údaje agend / Terms",
+    "resources": [
+        {
+            "name": "terms",
+            "path": "terms_current.csv",
+            "description": "Údaje jednotlivých agend / Terms",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "code",
+                        "type": "string",
+                        "description": "Kód údaje / Code of term"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "description": "Název údaje / Term"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string",
+                        "description": "Popis údaje / Description"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string",
+                        "description": "Typ / Type"
+                    },
+                    {
+                        "name": "bill_name",
+                        "type": "string",
+                        "description": "Název právního předpisu / Bill name"
+                    },
+                    {
+                        "name": "bill_number",
+                        "type": "integer",
+                        "description": "Číslo právního předpisu / Bill number"
+                    },
+                    {
+                        "name": "bill_year",
+                        "type": "integer",
+                        "description": "Rok právního předpisu / Bill year"
+                    },
+                    {
+                        "name": "bill_section",
+                        "type": "string",
+                        "description": "Paragraf / Section"
+                    },
+                    {
+                        "name": "bill_subsection",
+                        "type": "string",
+                        "description": "Odstave / Subsection"
+                    },
+                    {
+                        "name": "bill_paragraph",
+                        "type": "string",
+                        "description": "Písmeno / Paragraph"
+                    },
+                    {
+                        "name": "direct_link",
+                        "type": "string",
+                        "description": "Odkaz / Link"
+                    }
+                ]
+            }
+        }
+    ]
+}

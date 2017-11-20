@@ -93,7 +93,7 @@ for code in sorted(files_object):
         print("error:", code)
         break
 
-with open("terms_current.csv", "w") as fout:
+with open("../terms_current.csv", "w") as fout:
     # header = ["bject_code", "bject_name", "bject_description", "bject_bill_name", "bject_bill_number", "bject_bill_year", "bject_bill_section", "bject_bill_subsection", "bject_bill_paragraph", "code", "name", "description", "type", "bill_name", "bill_number", "bill_year", "bill_section", "bill_subsection", "bill_paragraph"]
     header = ["code", "name", "description", "type", "bill_name", "bill_number", "bill_year", "bill_section", "bill_subsection", "bill_paragraph", "link"]
     dw = csv.DictWriter(fout, header)
