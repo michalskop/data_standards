@@ -1,0 +1,103 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "gazetteNotice": "http://example.com/gazetteNotice.jsonld",
+        "gazette": "http://example.com/gazette.jsonld",
+        "organizace": {
+            "@id" : "gazette:organizace",
+            "description@cs": "Majitel úřední desky",
+            "example@cs": {
+                "organizace_nazev": "Město Plasy",
+                "organizace_ico": "00258245"
+            }
+        },
+        "zverejneno_od": {
+            "@id": "schema:datePublished",
+            "@type": "xsd:date",
+            "description@cs": "Datum, příp. i čas, zveřejnění oznámení na úřední desce",
+            "example@cs": "2017-11-04"
+        },
+        "zverejneno_do": {
+            "@id": "schema:expires",
+            "@type": "xsd:date",
+            "description@cs": "Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce",
+            "example@cs": "2017-11-24"
+        },
+        "nazev": {
+            "@id": "schema:name",
+            "@type": "xsd:string",
+            "description@cs": "Název oznámení",
+            "example@cs": "Rekonstrukce betonárny Šenov"
+        },
+        "anotace": {
+            "@id": "schema:description",
+            "@type": "xsd:string",
+            "description@cs": "Krátké shrnutí",
+            "example@cs": "Vyhlášení dotačního programu Podpora obnovy a rozvoje venkova Moravskoslezského kraje 2018"
+        },
+        "url": {
+            "@id": "schema:url",
+            "@type": "xsd:anyURI",
+            "description@cs": "URL oznámení (s lidsky čitelnou zprávou)",
+            "example@cs": "https://www.msk.cz/cz/verejna_sprava/dotacni-program-podpora-podnikani-v-moravskoslezskem-kraji-2017-92988/"
+        },
+        "dokument": {
+            "@id": "schema:DigitalDocument",
+            "@type": "xsd:anyURI",
+            "description@cs": "Další dokument/y",
+            "example@cs": [
+                "https://www.msk.cz/eudr/Ve%C5%99ejn%C3%A9%20vyhl%C3%A1%C5%A1ky/KUMS0B3KOOGY%230/KUMS0B3KOOGY%230%23KUMS0B3KOOGY/g5269707.pdf",
+                "https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf"
+            ]
+        },
+        "autor": {
+            "@id": "schema:creator",
+            "@type": [
+                "schema:Organization",
+                "schema:Person"
+            ],
+            "description@cs": "Původní autor oznámení, fyzická nebo právnická osoba.",
+            "example@cs": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=22841890"
+        },
+        "revize": {
+            "@id": "schema:version",
+            "description@cs": "Označení revize/verze oznámení",
+            "example@cs": [
+                1,
+                "2017-11-07"
+            ]
+        },
+        "schvaleno": {
+            "@id": "schema:dateCreated",
+            "@type": "xsd:date",
+            "description@cs": "Datum vydání/schválení oznámení",
+            "2017-11-07"
+        },
+        "znacka": {
+            "@id": "schema:productID",
+            "@type": "xsd:string",
+            "description@cs": "Značka, spisová značka, číslo jednací oznámení",
+            "example@cs": "123-456"
+        },
+        "agenda": {
+            "@id": "schema:category",
+            "@type": "xsd:string",
+            "description@cs": "Agenda, kategorie, správní činnost, pod které spadá oznámení",
+            "example@cs": [
+                "dotace",
+                "přenesená působnost"
+            ]
+        },
+        "about": {
+            "@id": "schema:about",
+            "@type": "schema:Thing",
+            "description@cs": "Osoby, organizace a místa, kterých se oznámění týká",
+            "example@cs": [
+                "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=22841890",
+                "Jan Novák"
+            ]
+        }
+    }
+}

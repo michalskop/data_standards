@@ -1,0 +1,22 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "gazetteNotice": "http://example.com/gazette.jsonld",
+        "nazev": {
+            "@id": "schema:legalName",
+            "@type": "xsd:string",
+            "law": "https://www.zakonyprolidi.cz/cs/2009-111#p26-2-a",
+            "description@cs": "Majitel úřední desky",
+            "example@cs": "Město Plasy"
+        },
+        "ico": {
+            "@id": "schema:identifier",
+            "@type": "xsd:string",
+            "law": "https://www.zakonyprolidi.cz/cs/2009-111#p26-2-d",
+            "description@cs": "IČO majitele úřední desky",
+            "example@cs": "00258245"
+        }
+    }
+}
