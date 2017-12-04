@@ -60,6 +60,8 @@
         
             <li><a class="toctree-l3" href="#submodely">Submodely</a></li>
         
+            <li><a class="toctree-l3" href="#specifikace-pomoci-json-ld">Specifikace pomocí JSON-LD</a></li>
+        
             <li><a class="toctree-l3" href="#specifikace-pomoci-json-schema">Specifikace pomocí JSON schema</a></li>
         
             <li><a class="toctree-l3" href="#specifikace-pomoci-xsd">Specifikace pomocí XSD</a></li>
@@ -164,16 +166,20 @@
             <div class="section">
               
                 <h1 id="oznameni-na-urednich-deskach">Oznámení na úředních deskách</h1>
-<p><strong>Draft 2017-10-30</strong></p>
+<p><strong>Draft 2017-12-04</strong></p>
 <h2 id="plny-model">Plný model</h2>
 <p><img alt="plný model" src="./diagram_full.png" /></p>
 <p>Základ modelu je jedna zpráva na úřední desce: <strong><a href="./gazette-notice-schema/">Oznámení na úřední desce</a></strong></p>
 <h2 id="submodely">Submodely</h2>
-<p>Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze <code>publisher</code>, <code>identifier</code> a <code>url</code> (kde <code>identifier</code> a <code>url</code> mohou být stejné, oboje <code>url</code>).</p>
+<p>Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze <code>úřední deska</code>(<code>organizace</code>) a <code>url</code>.</p>
 <p>V případě, že implementace používá prvky z plného modelu, měly by se jmenovat tak, jak jsou popsány v modelu.</p>
 <p>V implementaci je možné použít i další vlastní prvky, které nejsou popsány v plném modelu.</p>
-<h4 id="anglicke-vs-ceske-nazvy">Anglické vs. české názvy</h4>
-<p>Je silně doporučeno používat anglické názvy proměnných. Specifikace v některých případech obsahuje i české alternativy z historických důvodů (např. <code>zverejneno_od</code> lze použít namísto <code>date_published</code>)</p>
+<h2 id="specifikace-pomoci-json-ld">Specifikace pomocí JSON-LD</h2>
+<ul>
+<li><a href="https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazetteNotice.jsonld">Oznámení na úřadní desce</a></li>
+<li><a href="https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazette.jsonld">Úřední deska (organizace)</a>
+  TBD **</li>
+</ul>
 <h2 id="specifikace-pomoci-json-schema">Specifikace pomocí JSON schema</h2>
 <p>JSON schema modelu (v0.4):</p>
 <ul>
@@ -186,6 +192,27 @@
 <p>Při použití formátu CSV se doporučuje použít <a href="http://specs.frictionlessdata.io/table-schema/">Tabular Data Resource</a>, popis takového souboru se doporučuje jako <a href="http://specs.frictionlessdata.io/table-schema/">Tabular Data Package</a></p>
 <p>TBD **</p>
 <h2 id="priklady">Příklady</h2>
+<p><strong>Oznámení na desce dle specifikace JSON-LD</strong></p>
+<pre><code class="json">{
+    &quot;organizace&quot;: {
+        &quot;nazev&quot;: &quot;Moravskoslezský kraj - Krajský úřad&quot;
+    },
+    &quot;agenda&quot;: &quot;Veřejné vyhlášky&quot;,
+    &quot;znacka&quot;: &quot;MSK 105521/2017&quot;,
+    &quot;nazev&quot;: &quot;Rekonstrukce betonárny Šenov&quot;,
+    &quot;anotace&quot;: &quot;Vyhlášení dotačního programu Podpora obnovy a rozvoje venkova Moravskoslezského kraje 2018&quot;,
+    &quot;zverejneno_od&quot;: &quot;2017-11-13&quot;,
+    &quot;zvereneno_do&quot;: &quot;2017-11-30&quot;,
+    &quot;stav&quot;: &quot;vyvěšeno&quot;,
+    &quot;schváleno&quot;: &quot;2017-11-13&quot;,
+    &quot;revize&quot;: &quot;2017-11-13T16:09:06&quot;,
+    &quot;dokument&quot;: [
+        &quot;https://www.msk.cz/eudr/Veřejné%20vyhlášky/KUMS0B3KGV2F%231/KUMS0B3KGV2F%231%23KUMS0B3KGV2F/g5260584.pdf&quot;,
+        &quot;https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf&quot;
+    ]
+}
+</code></pre>
+
 <p>TBD **</p>
 <h2 id="odkazy">Odkazy</h2>
 <ul>
@@ -245,5 +272,5 @@
 
 <!--
 MkDocs version : 0.17.0
-Build Date UTC : 2017-10-31 01:14:57
+Build Date UTC : 2017-12-04 09:10:58
 -->

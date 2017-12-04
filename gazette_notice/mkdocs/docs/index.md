@@ -1,6 +1,6 @@
 # Oznámení na úředních deskách
 
-**Draft 2017-10-30**
+**Draft 2017-12-04**
 
 ## Plný model
 ![plný model](./diagram_full.png)
@@ -8,14 +8,17 @@
 Základ modelu je jedna zpráva na úřední desce: **[Oznámení na úřední desce](./gazette-notice-schema/)**
 
 ## Submodely
-Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze `publisher`, `identifier` a `url` (kde `identifier` a `url` mohou být stejné, oboje `url`).
+Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze `úřední deska`(`organizace`) a `url`.
 
 V případě, že implementace používá prvky z plného modelu, měly by se jmenovat tak, jak jsou popsány v modelu.
 
 V implementaci je možné použít i další vlastní prvky, které nejsou popsány v plném modelu.
 
-#### Anglické vs. české názvy
-Je silně doporučeno používat anglické názvy proměnných. Specifikace v některých případech obsahuje i české alternativy z historických důvodů (např. `zverejneno_od` lze použít namísto `date_published`)
+## Specifikace pomocí JSON-LD
+  - [Oznámení na úřadní desce](https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazetteNotice.jsonld)
+  - [Úřední deska (organizace)](https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazette.jsonld)
+  TBD **
+
 
 ## Specifikace pomocí JSON schema
 JSON schema modelu (v0.4):
@@ -32,6 +35,29 @@ Při použití formátu CSV se doporučuje použít [Tabular Data Resource](http
 TBD **
 
 ## Příklady
+
+**Oznámení na desce dle specifikace JSON-LD**
+```json
+{
+    "@context": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazetteNotice.jsonld",
+    "organizace": {
+        "nazev": "Moravskoslezský kraj - Krajský úřad"
+    },
+    "agenda": "Veřejné vyhlášky",
+    "znacka": "MSK 105521/2017",
+    "nazev": "Rekonstrukce betonárny Šenov",
+    "anotace": "Vyhlášení dotačního programu Podpora obnovy a rozvoje venkova Moravskoslezského kraje 2018",
+    "zverejneno_od": "2017-11-13",
+    "zvereneno_do": "2017-11-30",
+    "stav": "vyvěšeno",
+    "schváleno": "2017-11-13",
+    "revize": "2017-11-13T16:09:06",
+    "dokument": [
+        "https://www.msk.cz/eudr/Veřejné%20vyhlášky/KUMS0B3KGV2F%231/KUMS0B3KGV2F%231%23KUMS0B3KGV2F/g5260584.pdf",
+        "https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf"
+    ]
+}
+```
 
 TBD **
 

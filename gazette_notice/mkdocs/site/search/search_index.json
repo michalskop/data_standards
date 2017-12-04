@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00edch desk\u00e1ch\n\n\nDraft 2017-10-30\n\n\nPln\u00fd\u00a0model\n\n\n\n\nZ\u00e1klad modelu je jedna zpr\u00e1va na \u00fa\u0159edn\u00ed\u00a0desce: \nOzn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce\n\n\nSubmodely\n\n\nPraktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze \npublisher\n, \nidentifier\n a \nurl\n (kde \nidentifier\n a \nurl\n mohou b\u00fdt stejn\u00e9, oboje \nurl\n).\n\n\nV p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.\n\n\nV implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.\n\n\nAnglick\u00e9 vs. \u010desk\u00e9 n\u00e1zvy\n\n\nJe siln\u011b\u00a0doporu\u010deno pou\u017e\u00edvat anglick\u00e9 n\u00e1zvy prom\u011bnn\u00fdch. Specifikace v n\u011bkter\u00fdch p\u0159\u00edpadech obsahuje i \u010desk\u00e9 alternativy z historick\u00fdch d\u016fvod\u016f (nap\u0159. \nzverejneno_od\n lze pou\u017e\u00edt nam\u00edsto \ndate_published\n)\n\n\nSpecifikace pomoc\u00ed JSON schema\n\n\nJSON schema modelu (v0.4):\n\n\n\n\nInteraktivn\u00ed dokumentace sch\u00e9matu\n\n\nPopis na Github\n\n\n\n\nSpecifikace pomoc\u00ed XSD\n\n\nTBD **\n\n\nSerializace do CSV\n\n\nP\u0159i pou\u017eit\u00ed form\u00e1tu CSV se doporu\u010duje pou\u017e\u00edt \nTabular Data Resource\n, popis takov\u00e9ho souboru se doporu\u010duje jako \nTabular Data Package\n\n\nTBD **\n\n\nP\u0159\u00edklady\n\n\nTBD **\n\n\nOdkazy\n\n\n\n\nP\u0159ehled n\u011bkter\u00fdch \u010desk\u00fdch implementac\u00ed\n\n\nOpen Corporates' Gazette Notice\n\n\nDiagram lze editovat na \nDraw.io\n s pou\u017eit\u00edm \nzdrojov\u00e9ho XML\n\n\nMapov\u00e1n\u00ed na existuj\u00edc\u00ed standardy - Open Corporates\n\n\nExistuj\u00edc\u00ed\u00a0standardy\n\n\nP\u0159ehled odkaz\u016f ke standardizaci",
+            "text": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00edch desk\u00e1ch\n\n\nDraft 2017-12-04\n\n\nPln\u00fd\u00a0model\n\n\n\n\nZ\u00e1klad modelu je jedna zpr\u00e1va na \u00fa\u0159edn\u00ed\u00a0desce: \nOzn\u00e1men\u00ed na \u00fa\u0159edn\u00ed desce\n\n\nSubmodely\n\n\nPraktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze \n\u00fa\u0159edn\u00ed deska\n(\norganizace\n) a \nurl\n.\n\n\nV p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.\n\n\nV implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.\n\n\nSpecifikace pomoc\u00ed JSON-LD\n\n\n\n\nOzn\u00e1men\u00ed\u00a0na \u00fa\u0159adn\u00ed\u00a0desce\n\n\n\u00da\u0159edn\u00ed deska (organizace)\n\n  TBD **\n\n\n\n\nSpecifikace pomoc\u00ed JSON schema\n\n\nJSON schema modelu (v0.4):\n\n\n\n\nInteraktivn\u00ed dokumentace sch\u00e9matu\n\n\nPopis na Github\n\n\n\n\nSpecifikace pomoc\u00ed XSD\n\n\nTBD **\n\n\nSerializace do CSV\n\n\nP\u0159i pou\u017eit\u00ed form\u00e1tu CSV se doporu\u010duje pou\u017e\u00edt \nTabular Data Resource\n, popis takov\u00e9ho souboru se doporu\u010duje jako \nTabular Data Package\n\n\nTBD **\n\n\nP\u0159\u00edklady\n\n\nOzn\u00e1men\u00ed na desce dle specifikace JSON-LD\n\n\n{\n    \"organizace\": {\n        \"nazev\": \"Moravskoslezsk\u00fd kraj - Krajsk\u00fd \u00fa\u0159ad\"\n    },\n    \"agenda\": \"Ve\u0159ejn\u00e9 vyhl\u00e1\u0161ky\",\n    \"znacka\": \"MSK 105521/2017\",\n    \"nazev\": \"Rekonstrukce beton\u00e1rny \u0160enov\",\n    \"anotace\": \"Vyhl\u00e1\u0161en\u00ed dota\u010dn\u00edho programu Podpora obnovy a rozvoje venkova Moravskoslezsk\u00e9ho kraje 2018\",\n    \"zverejneno_od\": \"2017-11-13\",\n    \"zvereneno_do\": \"2017-11-30\",\n    \"stav\": \"vyv\u011b\u0161eno\",\n    \"schv\u00e1leno\": \"2017-11-13\",\n    \"revize\": \"2017-11-13T16:09:06\",\n    \"dokument\": [\n        \"https://www.msk.cz/eudr/Ve\u0159ejn\u00e9%20vyhl\u00e1\u0161ky/KUMS0B3KGV2F%231/KUMS0B3KGV2F%231%23KUMS0B3KGV2F/g5260584.pdf\",\n        \"https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf\"\n    ]\n}\n\n\n\n\nTBD **\n\n\nOdkazy\n\n\n\n\nP\u0159ehled n\u011bkter\u00fdch \u010desk\u00fdch implementac\u00ed\n\n\nOpen Corporates' Gazette Notice\n\n\nDiagram lze editovat na \nDraw.io\n s pou\u017eit\u00edm \nzdrojov\u00e9ho XML\n\n\nMapov\u00e1n\u00ed na existuj\u00edc\u00ed standardy - Open Corporates\n\n\nExistuj\u00edc\u00ed\u00a0standardy\n\n\nP\u0159ehled odkaz\u016f ke standardizaci",
             "title": "Obsah"
         },
         {
             "location": "/#oznameni-na-urednich-deskach",
-            "text": "Draft 2017-10-30",
+            "text": "Draft 2017-12-04",
             "title": "Ozn\u00e1men\u00ed na \u00fa\u0159edn\u00edch desk\u00e1ch"
         },
         {
@@ -17,13 +17,13 @@
         },
         {
             "location": "/#submodely",
-            "text": "Praktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze  publisher ,  identifier  a  url  (kde  identifier  a  url  mohou b\u00fdt stejn\u00e9, oboje  url ).  V p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.  V implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.",
+            "text": "Praktick\u00e1 implementace m\u016f\u017ee pou\u017e\u00edt skoro libovoln\u00fd submodel z pln\u00e9ho modelu. Povinn\u00e9 jsou pouze  \u00fa\u0159edn\u00ed deska ( organizace ) a  url .  V p\u0159\u00edpad\u011b, \u017ee implementace pou\u017e\u00edv\u00e1 prvky z pln\u00e9ho modelu, m\u011bly by se jmenovat tak, jak jsou pops\u00e1ny v modelu.  V implementaci je mo\u017en\u00e9 pou\u017e\u00edt i dal\u0161\u00ed vlastn\u00ed prvky, kter\u00e9 nejsou pops\u00e1ny v pln\u00e9m modelu.",
             "title": "Submodely"
         },
         {
-            "location": "/#anglicke-vs-ceske-nazvy",
-            "text": "Je siln\u011b\u00a0doporu\u010deno pou\u017e\u00edvat anglick\u00e9 n\u00e1zvy prom\u011bnn\u00fdch. Specifikace v n\u011bkter\u00fdch p\u0159\u00edpadech obsahuje i \u010desk\u00e9 alternativy z historick\u00fdch d\u016fvod\u016f (nap\u0159.  zverejneno_od  lze pou\u017e\u00edt nam\u00edsto  date_published )",
-            "title": "Anglick\u00e9 vs. \u010desk\u00e9 n\u00e1zvy"
+            "location": "/#specifikace-pomoci-json-ld",
+            "text": "Ozn\u00e1men\u00ed\u00a0na \u00fa\u0159adn\u00ed\u00a0desce  \u00da\u0159edn\u00ed deska (organizace) \n  TBD **",
+            "title": "Specifikace pomoc\u00ed JSON-LD"
         },
         {
             "location": "/#specifikace-pomoci-json-schema",
@@ -42,7 +42,7 @@
         },
         {
             "location": "/#priklady",
-            "text": "TBD **",
+            "text": "Ozn\u00e1men\u00ed na desce dle specifikace JSON-LD  {\n    \"organizace\": {\n        \"nazev\": \"Moravskoslezsk\u00fd kraj - Krajsk\u00fd \u00fa\u0159ad\"\n    },\n    \"agenda\": \"Ve\u0159ejn\u00e9 vyhl\u00e1\u0161ky\",\n    \"znacka\": \"MSK 105521/2017\",\n    \"nazev\": \"Rekonstrukce beton\u00e1rny \u0160enov\",\n    \"anotace\": \"Vyhl\u00e1\u0161en\u00ed dota\u010dn\u00edho programu Podpora obnovy a rozvoje venkova Moravskoslezsk\u00e9ho kraje 2018\",\n    \"zverejneno_od\": \"2017-11-13\",\n    \"zvereneno_do\": \"2017-11-30\",\n    \"stav\": \"vyv\u011b\u0161eno\",\n    \"schv\u00e1leno\": \"2017-11-13\",\n    \"revize\": \"2017-11-13T16:09:06\",\n    \"dokument\": [\n        \"https://www.msk.cz/eudr/Ve\u0159ejn\u00e9%20vyhl\u00e1\u0161ky/KUMS0B3KGV2F%231/KUMS0B3KGV2F%231%23KUMS0B3KGV2F/g5260584.pdf\",\n        \"https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf\"\n    ]\n}  TBD **",
             "title": "P\u0159\u00edklady"
         },
         {

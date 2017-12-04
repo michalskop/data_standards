@@ -3,7 +3,7 @@
         "xsd": "https://www.w3.org/TR/xmlschema-2/#",
         "schema": "http://schema.org/",
         "@language": "cs",
-        "gazetteNotice": "http://example.com/gazette.jsonld",
+        "gazette": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazette.jsonld",
         "nazev": {
             "@id": "schema:legalName",
             "@type": "xsd:string",
