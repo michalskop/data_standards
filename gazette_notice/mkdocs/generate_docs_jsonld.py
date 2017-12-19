@@ -142,20 +142,20 @@ for filename in sorted(glob.glob("../json-ld-meta/*.jsonld")):
     with open("docs/" + page + ".md", "w") as fout:
         fout.write(text)
     # break
-#
-# # YAML manually
-# yml = 'site_name: ' + t['site_name'] + "\n"
-# yml += 'pages:\n'
-# yml += '    - Obsah: index.md\n'
-# for k in sorted(files):
-#     yml += '    - ' + k + ': ' + files[k] + "\n"
-# yml += "theme: readthedocs"
-#
-# # main = {
-# #     "site_name": t['site_name'],
-# #     "pages": files,
-# #     "theme": "readthedocs"
-# # }
-# with open("mkdocs.yml", "w") as fout:
-#     fout.write(yml)
-#     # fout.write(yaml.dump(main))
+
+# YAML manually
+yml = 'site_name: ' + t['site_name'] + "\n"
+yml += 'pages:\n'
+yml += '    - Obsah: index.md\n'
+for k in sorted(files):
+    yml += '    - ' + k + ': ' + files[k] + "\n"
+yml += "theme: readthedocs"
+
+# main = {
+#     "site_name": t['site_name'],
+#     "pages": files,
+#     "theme": "readthedocs"
+# }
+with open("mkdocs.yml", "w") as fout:
+    fout.write(yml)
+    # fout.write(yaml.dump(main))

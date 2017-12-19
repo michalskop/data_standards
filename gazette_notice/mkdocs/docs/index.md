@@ -1,66 +1,50 @@
 # Oznámení na úředních deskách
 
-**Draft 2017-12-04**
+**Draft 2017-12-19**
 
 ## Plný model
 ![plný model](./diagram_full.png)
 
-Základ modelu je jedna zpráva na úřední desce: **[Oznámení na úřední desce](./gazette-notice-schema/)**
+Základ modelu je jedna zpráva na úřední desce: **[Oznámení na úřední desce](./oznameni/)**
 
 ## Submodely
-Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze `úřední deska`(`organizace`) a `url`.
+Praktická implementace může použít skoro libovolný submodel z plného modelu. Povinné jsou pouze `organizace`(úřední deska) a `url`.
 
 V případě, že implementace používá prvky z plného modelu, měly by se jmenovat tak, jak jsou popsány v modelu.
 
 V implementaci je možné použít i další vlastní prvky, které nejsou popsány v plném modelu.
 
 ## Specifikace pomocí JSON-LD
-  - [Oznámení na úřadní desce](https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazetteNotice.jsonld)
-  - [Úřední deska (organizace)](https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/gazette.jsonld)
-  TBD **
+  - [Oznámení na úřadní desce](https://github.com/michalskop/data_standards/blob/master/gazette_notice/json-ld/oznameni.jsonld)
 
-
-## Specifikace pomocí JSON schema
-JSON schema modelu (v0.4):
-
-  - [Interaktivní dokumentace schématu](https://michalskop.github.io/docson/#https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json_schema_cs/gazette-notice-schema.json)
-  - [Popis na Github](https://github.com/michalskop/data_standards/tree/master/gazette_notice/json_schema_cs)
 
 ## Specifikace pomocí XSD
 TBD **
 
 ## Serializace do CSV
-Při použití formátu CSV se doporučuje použít [Tabular Data Resource](http://specs.frictionlessdata.io/table-schema/), popis takového souboru se doporučuje jako [Tabular Data Package](http://specs.frictionlessdata.io/table-schema/)
+Při použití formátu CSV se doporučuje použít [CSV on the web](https://www.w3.org/TR/2016/NOTE-tabular-data-primer-20160225/)
 
-TBD **
 
 ## Příklady
+Pozn.: více příkladů přímo u jednotlivých prvků.
 
-**Oznámení na desce dle specifikace JSON-LD**
+**JSON**
 ```json
 {
-    "@context": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazetteNotice.jsonld",
+    "zverejneno_od": "2017-11-04",
+    "url": "https://www.msk.cz/cz/verejna_sprava/dotacni-program-podpora-podnikani-v-moravskoslezskem-kraji-2017-92988/",
     "organizace": {
-        "nazev": "Moravskoslezský kraj - Krajský úřad"
+        "ico": "00258245"
     },
-    "agenda": "Veřejné vyhlášky",
-    "znacka": "MSK 105521/2017",
-    "nazev": "Rekonstrukce betonárny Šenov",
-    "anotace": "Vyhlášení dotačního programu Podpora obnovy a rozvoje venkova Moravskoslezského kraje 2018",
-    "zverejneno_od": "2017-11-13",
-    "zvereneno_do": "2017-11-30",
-    "stav": "vyvěšeno",
-    "schváleno": "2017-11-13",
-    "revize": "2017-11-13T16:09:06",
-    "dokument": [
-        "https://www.msk.cz/eudr/Veřejné%20vyhlášky/KUMS0B3KGV2F%231/KUMS0B3KGV2F%231%23KUMS0B3KGV2F/g5260584.pdf",
-        "https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf"
-    ]
+    "zverejneno_do": "2017-11-24",
+    "nazev": "Rekonstrukce betonárny Šenov"
 }
 ```
-
-TBD **
-
+**CSV**
+```csv
+zverejneno_od,url,organizace_ico,zverejneno_do,nazev
+2017-11-04,https://www.msk.cz/cz/verejna_sprava/dotacni-program-podpora-podnikani-v-moravskoslezskem-kraji-2017-92988/,00258245,2017-11-24,Rekonstrukce betonárny Šenov
+```
 ## Odkazy
   - [Přehled některých českých implementací](https://docs.google.com/spreadsheets/d/1x2ix9qv1DiXO26lLnvM9c7w83Wg_Wpeu8BP1OsTS1Q4/edit#gid=0)
   - [Open Corporates' Gazette Notice](https://github.com/openc/openc-schema/blob/master/schemas/gazette-notice-schema.json)
