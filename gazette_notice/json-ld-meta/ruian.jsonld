@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "gazette": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/ruian.jsonld",
+        "typ": {
+            "@id": "schema:category",
+            "@type": "xsd:string",
+            "description@cs": "Typ místa dle RÚIAN",
+            "example@cs": [
+                "budova",
+                "parcela"
+            ]
+        },
+        "kod": {
+            "@id": "schema:identifier",
+            "@type": "xsd:integer",
+            "description@cs": "Identifikátor místa dle RÚIAN",
+            "example@cs": "690775"
+        },
+        "name@cs": "Místo dle RÚIAN",
+        "example@cs": [
+            {
+                "typ": "budova",
+                "kod": "690775"
+            },
+            {
+                "typ": "parcela",
+                "kod": "1665545435"
+            }
+        ],
+        "description@cs": "Identifikace místa dle RÚIAN"
+    }
+}

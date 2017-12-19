@@ -1,0 +1,52 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "subjekt": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/subjekt.jsonld",
+        "organizace": {
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/organizace.jsonld",
+            "description@cs": "Organizace, které se týká oznámení",
+            "example@cs": {
+                "nazev": "Město Plasy",
+                "ico": "00258245"
+            }
+        },
+        "fyzicka_osoba": {
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/person.jsonld",
+            "description@cs": "Fyzická osoba, které se týká oznámení",
+            "example@cs": {
+                "prijmeni": "Nováková",
+                "jmeno": "Tereza"
+            }
+        },
+        "name@cs": "Subjekt oznámení",
+        "description@cs": "Osoby, organizace a místa, kterých se oznámení týká",
+        "example@cs": [
+            {
+                "@type": "organizace",
+                "nazev": "Město Plasy",
+                "ico": "00258245"
+            },
+            {
+                "@type": "fyzicka_osoba",
+                "prijmeni": "Nováková",
+                "krestni_jmeno": "Tereza"
+            },
+            {
+                "@type": "fyzicka_osoba",
+                "jmeno": "Tereza Nováková",
+                "adresa": {
+                   "ulice": "Plzeňská 2",
+                   "lokalita": "Plasy",
+                   "psc": "33101"
+                }
+            },
+            {
+                "@type": "misto:ruian",
+                "typ": "parcela",
+                "kod": "1665545435"
+            }
+        ]
+    }
+}

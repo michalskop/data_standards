@@ -1,0 +1,55 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "fyzickaOsoba": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/fyzickaOsoba.jsonld",
+        "prijmeni": {
+            "@id": "schema:familyName",
+            "@type": "xsd:string",
+            "description@cs": "Příjmení",
+            "example@cs": "Nováková"
+        },
+        "krestni_jmeno": {
+            "@id": "schema:givenName",
+            "@type": "xsd:string",
+            "description@cs": "Křestní jméno",
+            "example@cs": "Tereza"
+        },
+        "name": {
+            "@id": "schema:name",
+            "@type": "xsd:string",
+            "description@cs": "Jméno",
+            "example@cs": "Tereze Nováková"
+        },
+        "adresa": {
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/misto.jsonld",
+            "description@cs": "Adresa",
+            "example@cs": [
+                "Plzeňská 2, Plasy, 33101",
+                {
+                   "ulice": "Plzeňská 2",
+                   "lokalita": "Plasy",
+                   "psc": "33101"
+                }
+            ]
+        },
+        "name@cs": "Fyzická osoba",
+        "description@cs": "Fyzická osoba - člověk",
+        "example@cs": [
+            {
+                "jmeno": "Tereza Nováková",
+                "adresa":
+                {
+                   "ulice": "Plzeňská 2",
+                   "lokalita": "Plasy",
+                   "psc": "33101"
+                }
+            },
+            {
+                "prijmeni": "Nováková",
+                "krestni_jmeno": "Tereza"
+            }
+        ]
+    }
+}

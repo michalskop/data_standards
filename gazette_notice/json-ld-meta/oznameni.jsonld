@@ -3,14 +3,13 @@
         "xsd": "https://www.w3.org/TR/xmlschema-2/#",
         "schema": "http://schema.org/",
         "@language": "cs",
-        "gazetteNotice": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazetteNotice.jsonld",
-        "gazette": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazette.jsonld",
+        "gazetteNotice": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/oznameni.jsonld",
         "organizace": {
-            "@id" : "gazette:organizace",
+            "@id" : "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/organizace.jsonld",
             "description@cs": "Majitel úřední desky",
             "example@cs": {
-                "organizace_nazev": "Město Plasy",
-                "organizace_ico": "00258245"
+                "nazev": "Město Plasy",
+                "ico": "00258245"
             }
         },
         "zverejneno_od": {
@@ -73,7 +72,7 @@
             "@id": "schema:dateCreated",
             "@type": "xsd:date",
             "description@cs": "Datum vydání/schválení oznámení",
-            "2017-11-07"
+            "example@cs": "2017-11-07"
         },
         "znacka": {
             "@id": "schema:productID",
@@ -90,14 +89,68 @@
                 "přenesená působnost"
             ]
         },
-        "about": {
-            "@id": "schema:about",
+        "subjekt": {
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/subjekt.jsonld",
             "@type": "schema:Thing",
-            "description@cs": "Osoby, organizace a místa, kterých se oznámění týká",
+            "description@cs": "Osoby, organizace a místa, kterých se oznámení týká",
             "example@cs": [
-                "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=22841890",
-                "Jan Novák"
+                {"ico": "22841890"},
+                {"jmeno": "Jan Novák"}
             ]
-        }
+        },
+        "name@cs": "Oznámení na úřední desce",
+        "description@cs": "Oznámení na úřední desce",
+        "example@cs": [
+            {
+                "organizace": {
+                    "ico": "00258245"
+                },
+                "zverejneno_od": "2017-11-04",
+                "zverejneno_do": "2017-11-24",
+                "nazev": "Rekonstrukce betonárny Šenov",
+                "url": "https://www.msk.cz/cz/verejna_sprava/dotacni-program-podpora-podnikani-v-moravskoslezskem-kraji-2017-92988/"
+            },
+            {
+                "organizace": {
+                    "nazev": "Město Plasy",
+                    "ico": "00258245",
+                    "adresa": {
+                       "ulice": "Plzeňská 2",
+                       "lokalita": "Plasy",
+                       "psc": "33101"
+                    }
+                },
+                "zverejneno_od": "2017-11-04T12:12:00+01:00",
+                "zverejneno_do": "2017-11-24",
+                "nazev": "Dotační program venkov 2018",
+                "anotace": "Vyhlášení dotačního programu Podpora obnovy a rozvoje venkova Moravskoslezského kraje 2018",
+                "url": "https://www.msk.cz/cz/verejna_sprava/dotacni-program-podpora-podnikani-v-moravskoslezskem-kraji-2017-92988/",
+                "dokument": [
+                    "https://www.msk.cz/eudr/Ve%C5%99ejn%C3%A9%20vyhl%C3%A1%C5%A1ky/KUMS0B3KOOGY%230/KUMS0B3KOOGY%230%23KUMS0B3KOOGY/g5269707.pdf",
+                    "https://www.msk.cz/assets/verejna_sprava/priloha-c--1---navrh-smlouvy-o-poskytnuti-dotace-z-rozpoctu-kraje_4.pdf"
+                ],
+                "autor": {
+                    "@type": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/fyzickaOsoba.jsonld",
+                    "jmeno": "Tereza Nováková",
+                    "adresa":
+                    {
+                       "ulice": "Plzeňská 1",
+                       "lokalita": "Plasy",
+                       "psc": "33101"
+                    }
+                },
+                "revize": 2,
+                "schvaleno": "2017-11-07",
+                "znacka": "123-456",
+                "agenda": [
+                    "dotace",
+                    "přenesená působnost"
+                ],
+                "subjekt": {
+                    "@type": "organizace",
+                    "jmeno": "Moravskoslezský kraj"
+                }
+            }
+        ]
     }
 }

@@ -1,0 +1,50 @@
+{
+    "@context": {
+        "xsd": "https://www.w3.org/TR/xmlschema-2/#",
+        "schema": "http://schema.org/",
+        "@language": "cs",
+        "misto": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/adresa.jsonld",
+        "postovni_adresa": {
+            "@id": "schema:PostalAddress",
+            "description@cs": "Poštovní adresa",
+            "example@cs": {
+                "ulice": "Plzeňská 2",
+                "lokalita": "Plasy",
+                "psc": "33101"
+            }
+        },
+        "adresa": {
+            "@id": "schema:Text",
+            "@type": "xsd:string",
+            "description@cs": "Adresa (jako text)",
+            "example@cs": "Plzeňská 2, Plasy, 33101"
+        },
+        "ruian": {
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/ruian.jsonld",
+            "description@cs": "Klasifikace dle RÚIAN",
+            "example@cs": {
+                "typ": "budova",
+                "kod": "690775"
+            }
+        },
+        "name@cs": "Místo",
+        "description@cs": "Definované místo",
+        "example@cs": [
+            {
+                "@type": "postovni_adresa",
+                "ulice": "Plzeňská 2",
+                "lokalita": "Plasy",
+                "psc": "33101"
+            },
+            {
+                "@type": "adresa",
+                "adresa": "Plzeňská 2, Plasy, 33101"
+            },
+            {
+                "@type": "ruian",
+                "typ": "budova",
+                "kod": "690775"
+            }
+        ]
+    }
+}

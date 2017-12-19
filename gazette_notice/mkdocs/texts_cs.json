@@ -4,5 +4,6 @@
     "site_name": "Dokumenty na úředních deskách",
     "one_of": "Jeden z:",
     "any_of": "Libovolný z:",
-    "example": "Příklad"
+    "example": "Příklad",
+    "complete_examples": "Kompletní příklady"
 }
