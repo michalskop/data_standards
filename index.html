@@ -80,57 +80,32 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="entity/">Entita (Entity)</a>
+    <a class="" href="fyzickaOsoba/">Fyzická osoba</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="person/">Fyzická osoba (Person)</a>
+    <a class="" href="misto/">Místo</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="geocoordinates/">Geo souřadnice (Geocoordinates)</a>
+    <a class="" href="ruian/">Místo dle RÚIAN</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="geoshape/">Geoshape, geo tvar (Geoshape)</a>
+    <a class="" href="organizace/">Organizace</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="identifier/">Identifikátor (Identifier)</a>
+    <a class="" href="oznameni/">Oznámení na úřední desce</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="person_name/">Jméno fyzické osoby (Person name)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="classification/">Klasifikace (Classification)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="place/">Místo (Place)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="organisation/">Organizace (Company)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="gazette-notice-schema/">Oznámení na úřední desce (Notice)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="postal_address/">Poštovní adresa (Postal Address)</a>
+    <a class="" href="subjekt/">Subjekt oznámení</a>
 	    </li>
           
         </ul>
@@ -194,6 +169,7 @@
 <h2 id="priklady">Příklady</h2>
 <p><strong>Oznámení na desce dle specifikace JSON-LD</strong></p>
 <pre><code class="json">{
+    &quot;@context&quot;: &quot;https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/gazetteNotice.jsonld&quot;,
     &quot;organizace&quot;: {
         &quot;nazev&quot;: &quot;Moravskoslezský kraj - Krajský úřad&quot;
     },
@@ -230,7 +206,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="entity/" class="btn btn-neutral float-right" title="Entita (Entity)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="fyzickaOsoba/" class="btn btn-neutral float-right" title="Fyzická osoba">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -258,7 +234,7 @@
       
       
       
-        <span style="margin-left: 15px"><a href="entity/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="fyzickaOsoba/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -272,5 +248,5 @@
 
 <!--
 MkDocs version : 0.17.0
-Build Date UTC : 2017-12-04 09:10:58
+Build Date UTC : 2017-12-19 03:24:10
 -->

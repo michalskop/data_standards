@@ -4,95 +4,55 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/entity/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/fyzickaOsoba/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/person/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/misto/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/geocoordinates/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/ruian/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/geoshape/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/organizace/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/identifier/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/oznameni/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/person_name/</loc>
-     <lastmod>2017-12-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/classification/</loc>
-     <lastmod>2017-12-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/place/</loc>
-     <lastmod>2017-12-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/organisation/</loc>
-     <lastmod>2017-12-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/gazette-notice-schema/</loc>
-     <lastmod>2017-12-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/postal_address/</loc>
-     <lastmod>2017-12-04</lastmod>
+     <loc>/subjekt/</loc>
+     <lastmod>2017-12-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
