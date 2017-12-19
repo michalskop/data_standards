@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Organizace (Company) - Dokumenty na úředních deskách</title>
+  <title>Místo dle RÚIAN - Dokumenty na úředních deskách</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Organizace (Company)";
-    var mkdocs_page_input_path = "organisation.md";
-    var mkdocs_page_url = "/organisation/";
+    var mkdocs_page_name = "M\u00edsto dle R\u00daIAN";
+    var mkdocs_page_input_path = "ruian.md";
+    var mkdocs_page_url = "/ruian/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -54,60 +54,30 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../entity/">Entita (Entity)</a>
+    <a class="" href="../fyzickaOsoba/">Fyzická osoba</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../person/">Fyzická osoba (Person)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../geocoordinates/">Geo souřadnice (Geocoordinates)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../geoshape/">Geoshape, geo tvar (Geoshape)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../identifier/">Identifikátor (Identifier)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../person_name/">Jméno fyzické osoby (Person name)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../classification/">Klasifikace (Classification)</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../place/">Místo (Place)</a>
+    <a class="" href="../misto/">Místo</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Organizace (Company)</a>
+    <a class="current" href="./">Místo dle RÚIAN</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#organizace-company">Organizace (Company)</a></li>
+    <li class="toctree-l2"><a href="#misto-dle-ruian">Místo dle RÚIAN</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#identifiers">identifiers</a></li>
+            <li><a class="toctree-l3" href="#gazette">gazette</a></li>
         
-            <li><a class="toctree-l3" href="#name">name</a></li>
+            <li><a class="toctree-l3" href="#kod">kod</a></li>
         
-            <li><a class="toctree-l3" href="#registered_address">registered_address</a></li>
+            <li><a class="toctree-l3" href="#typ">typ</a></li>
         
-            <li><a class="toctree-l3" href="#priklad">Příklad</a></li>
+            <li><a class="toctree-l3" href="#kompletni-priklady">Kompletní příklady</a></li>
         
         </ul>
     
@@ -117,12 +87,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../gazette-notice-schema/">Oznámení na úřední desce (Notice)</a>
+    <a class="" href="../organizace/">Organizace</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../postal_address/">Poštovní adresa (Postal Address)</a>
+    <a class="" href="../oznameni/">Oznámení na úřední desce</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../subjekt/">Subjekt oznámení</a>
 	    </li>
           
         </ul>
@@ -147,7 +122,7 @@
     
       
     
-    <li>Organizace (Company)</li>
+    <li>Místo dle RÚIAN</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -157,31 +132,77 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="organizace-company">Organizace <small>(Company)</small></h2>
-<p>Organizace (právnická osoba)</p>
-<p><strong><code>organisation.json</code></strong></p>
-<h4 id="identifiers">identifiers</h4>
-<p>Alternativy: <code>identifiers</code>, <code>idenfitikatory</code></p>
-<p>Identifikátory, např. IČ</p>
-<p>Typ: <code>array</code></p>
-<h4 id="name">name</h4>
-<p>Alternativy: <code>name</code>, <code>jmeno</code></p>
-<p>Jméno organizace (právnické osoby)</p>
-<p>Typ: <code>string</code></p>
-<h4 id="registered_address">registered_address</h4>
-<p>Alternativy: <code>registered_address</code>, <code>adresa</code></p>
-<p>Adresa organizace (právnické osoby)</p>
-<p>Typ: <code>place.json</code></p>
-<h3 id="priklad">Příklad</h3>
+                <h2 id="misto-dle-ruian">Místo dle RÚIAN</h2>
+<p><em>Identifikace místa dle RÚIAN</em></p>
+<p><strong><code>ruian.jsonld</code></strong></p>
+<h3 id="gazette">gazette</h3>
+<p>https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/ruian.jsonld</p>
+<h3 id="kod">kod</h3>
+<p>Identifikátor místa dle RÚIAN</p>
+<p><strong>@id</strong>: <code>schema:identifier</code></p>
+<p><strong>@type</strong>: <code>xsd:integer</code></p>
+<h4 id="priklad">Příklad</h4>
+<h6 id="json">JSON</h6>
+<pre><code class="json">&quot;690775&quot;
+</code></pre>
+
+<h6 id="csv">CSV</h6>
+<pre><code class="csv">&quot;&quot;
+
+690775
+</code></pre>
+
+<h3 id="typ">typ</h3>
+<p>Typ místa dle RÚIAN</p>
+<p><strong>@id</strong>: <code>schema:category</code></p>
+<p><strong>@type</strong>: <code>xsd:string</code></p>
+<h4 id="priklad_1">Příklad</h4>
+<h6 id="json_1">JSON</h6>
+<pre><code class="json">&quot;budova&quot;
+</code></pre>
+
+<h6 id="csv_1">CSV</h6>
+<pre><code class="csv">&quot;&quot;
+
+budova
+</code></pre>
+
+<pre><code class="json">&quot;parcela&quot;
+</code></pre>
+
+<h6 id="csv_2">CSV</h6>
+<pre><code class="csv">&quot;&quot;
+
+parcela
+</code></pre>
+
+<h3 id="kompletni-priklady">Kompletní příklady</h3>
+<h4 id="priklad-1">Příklad 1</h4>
+<h6 id="json_2">JSON</h6>
 <pre><code class="json">{
-    &quot;identifiers&quot;: [
-        {
-            &quot;identifier&quot;: &quot;00258245&quot;,
-            &quot;scheme&quot;: &quot;IČ&quot;
-        }
-    ],
-    &quot;name&quot;: &quot;Město Plasy&quot;
+    &quot;typ&quot;: &quot;budova&quot;,
+    &quot;kod&quot;: &quot;690775&quot;
 }
+</code></pre>
+
+<h6 id="csv_3">CSV</h6>
+<pre><code class="csv">typ,kod
+
+budova,690775
+</code></pre>
+
+<h4 id="priklad-2">Příklad 2</h4>
+<h6 id="json_3">JSON</h6>
+<pre><code class="json">{
+    &quot;typ&quot;: &quot;parcela&quot;,
+    &quot;kod&quot;: &quot;1665545435&quot;
+}
+</code></pre>
+
+<h6 id="csv_4">CSV</h6>
+<pre><code class="csv">typ,kod
+
+parcela,1665545435
 </code></pre>
               
             </div>
@@ -190,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../gazette-notice-schema/" class="btn btn-neutral float-right" title="Oznámení na úřední desce (Notice)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../organizace/" class="btn btn-neutral float-right" title="Organizace">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../place/" class="btn btn-neutral" title="Místo (Place)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../misto/" class="btn btn-neutral" title="Místo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -219,10 +240,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../place/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../misto/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../gazette-notice-schema/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../organizace/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

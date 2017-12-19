@@ -13,7 +13,7 @@
             }
         },
         "fyzicka_osoba": {
-            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/person.jsonld",
+            "@id": "https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/json-ld/fyzickaOsoba.jsonld",
             "description@cs": "Fyzická osoba, které se týká oznámení",
             "example@cs": {
                 "prijmeni": "Nováková",
