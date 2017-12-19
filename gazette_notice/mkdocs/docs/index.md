@@ -3,7 +3,7 @@
 **Draft 2017-12-19**
 
 ## Plný model
-![plný model](./diagram_full.png)
+![plný model](https://raw.githubusercontent.com/michalskop/data_standards/master/gazette_notice/diagram_full.png)
 
 Základ modelu je jedna zpráva na úřední desce: **[Oznámení na úřední desce](./oznameni/)**
 
