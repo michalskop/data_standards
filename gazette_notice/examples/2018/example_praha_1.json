@@ -4,6 +4,9 @@
     "zverejneno_od": "2018-02-20T00:00:00",
     "zverejneno_do": "2018-04-20T00:00:00",
     "znacka": "SCZ-4919/2018",
+    "organizace": {
+        "ico": "00064581"
+    },
     "agenda": [
         "oznámení"
     ],
