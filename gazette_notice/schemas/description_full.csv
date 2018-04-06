@@ -1,0 +1,99 @@
+nazev_atributu,datovy_typ,popis,priklad,datovy_typ
+id,[[ datovy-typ:řetezec | Řetězec ]],"Identifikátor oznámení na úřední desce, např. pořadové číslo.",2018-1,string
+organizace_ico,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. IČO.,00258245,string
+organizace_nazev,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Název.,Město Horní Datová,string
+autor_nazev,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Název.,Obec Dolní Datová,string
+autor_ico,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. IČO.,258245,string
+url,[[ datovy-typ:řetezec | Řetězec ]],URL oznámení (s lidsky čitelnou zprávou),https://example.com/uredni_deska/2018-1,string
+nazev,[[ datovy-typ:řetezec | Řetězec ]],Název oznámení,Dotační program Hasiči 2018,string
+anotace,[[ datovy-typ:řetezec | Řetězec ]],"Krátké shrnutí oznámení, anotace, abstrakt.",Program na podporu dobrovolných hasičů v roce 2018,string
+zverejneno_od,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, zveřejnění oznámení na úřední desce.",2018-01-03T11:12:13+01:00,string
+zverejneno_do,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce.",2018-01-03T11:12:13+01:00,string
+schvaleno,[[ datovy-typ:řetezec | Řetězec ]],Datum vydání/schválení oznámení.,2017-12-31,string
+identifikator,[[ datovy-typ:řetezec | Řetězec ]],Jednoznačný identifikátor dokumentu tvořícího oznámení.,P18D00000072,string
+znacka,[[ datovy-typ:řetezec | Řetězec ]],Spisová značka oznámení.,OV/13/2018-Tisj,string
+cislo_jednaci,[[ datovy-typ:řetezec | Řetězec ]],Číslo jednací oznámení.,OV/666/18 Tisj,string
+revize,[[ datovy-typ:řetezec | Řetězec ]],Označení revize/verze oznámení.,20180101,string
+agenda,[[ datovy-typ:řetezec | Řetězec ]],"Agendy, kategorie, správní činnosti, pod které spadá oznámení.",dotace,string
+dokument_nazev,[[ datovy-typ:řetezec | Řetězec ]],Další dokument/y. Název dokumentu.,Příloha 1,string
+dokument_url,[[ datovy-typ:řetezec | Řetězec ]],Další dokument/y. URL dokumentu.,https://example.com/uredni_deska/2018-1/priloha1.odt,string
+subjekt_nazev,[[ datovy-typ:řetezec | Řetězec ]],"Název subjektu, kterého se oznámení týká.",Sbor dobrovolných hasičů Dolní Datová,string
+subjekt_ico,[[ datovy-typ:řetezec | Řetězec ]],"IČO subjektu, kterého se oznámení týká.",00258267,string
+organizace_adresa_kod_ruian,[[ datovy-typ:celé-císlo | Celé číslo ]],"Provozovatel úřední desky. ID v Registru územních identifikátorů, adres a nemovitostí.",694185,integer
+organizace_adresa_typ_ruian,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",stavební objekt,string
+organizace_adresa_kod_adm,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285,string
+organizace_adresa_kod_obce,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Obec - LAU 2 kód.,CZ0325 559351,string
+organizace_adresa_nazev_obce,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Název obce.,Plasy,string
+organizace_adresa_nazev_momc,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Plzeň 2-Slovany,string
+organizace_adresa_nazev_mop,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8,string
+organizace_adresa_kod_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Kód části obce vedené v RÚIAN.,121533,string
+organizace_adresa_nazev_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov,string
+organizace_adresa_nazev_ulice,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní,string
+organizace_adresa_typ_so,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.,string
+organizace_adresa_cislo_domovni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Provozovatel úřední desky. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12,integer
+organizace_adresa_cislo_orientacni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Provozovatel úřední desky. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",2,integer
+organizace_adresa_znak_cisla_orientacniho,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a,string
+organizace_adresa_psc,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Poštovní směrovací číslo.,33101,string
+organizace_adresa_kod_okresu,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Okres - LAU 1 kód.,CZ0325,string
+organizace_adresa_nazev_okresu,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Název okresu.,Plzeň-sever,string
+organizace_adresa_kod_kraje,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Kraj - NUTS 3 kód.,CZ032,string
+organizace_adresa_nazev_kraje,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Název kraje.,Plzeňský kraj,string
+organizace_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel úřední desky. Označení budovy jejím názvem, číslem apod.",Prague Gate,string
+organizace_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Číslo patra nebo jiné označení patra.,4. patro,string
+organizace_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Číslo místnosti nebo jiné označení místnosti.,Místnost 4001,string
+organizace_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy",string
+organizace_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Provozovatel úřední desky. Zeměpisná šířka.,49.6421053,double
+organizace_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Provozovatel úřední desky. Zeměpisná délka.,12.518535,double
+organizace_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],Provozoval úřední desky. Souřadnicový systém.,4326,string
+autor_adresa_kod_ruian,[[ datovy-typ:celé-císlo | Celé číslo ]],"Původní autor oznámení. ID v Registru územních identifikátorů, adres a nemovitostí.",694185,integer
+autor_adresa_typ_ruian,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",stavební objekt,string
+autor_adresa_kod_adm,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285,string
+autor_adresa_kod_obce,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Obec - LAU 2 kód.,CZ0325 559351,string
+autor_adresa_nazev_obce,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Název obce.,Plasy,string
+autor_adresa_nazev_momc,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Plzeň 2-Slovany,string
+autor_adresa_nazev_mop,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8,string
+autor_adresa_kod_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Kód části obce vedené v RÚIAN.,121533,string
+autor_adresa_nazev_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov,string
+autor_adresa_nazev_ulice,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní,string
+autor_adresa_typ_so,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.,string
+autor_adresa_cislo_domovni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Původní autor oznámení. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12,integer
+autor_adresa_cislo_orientacni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Původní autor oznámení. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",2,integer
+autor_adresa_znak_cisla_orientacniho,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a,string
+autor_adresa_psc,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Poštovní směrovací číslo.,33101,string
+autor_adresa_kod_okresu,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Okres - LAU 1 kód.,CZ0325,string
+autor_adresa_nazev_okresu,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Název okresu.,Plzeň-sever,string
+autor_adresa_kod_kraje,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Kraj - NUTS 3 kód.,CZ032,string
+autor_adresa_nazev_kraje,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Název kraje.,Plzeňský kraj,string
+autor_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor oznámení. Označení budovy jejím názvem, číslem apod.",Prague Gate,string
+autor_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Číslo patra nebo jiné označení patra.,4. patro,string
+autor_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Číslo místnosti nebo jiné označení místnosti.,Místnost 4001,string
+autor_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy",string
+autor_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Původní autor oznámení. Zeměpisná šířka.,49.6421053,double
+autor_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Původní autor oznámení. Zeměpisná délka.,12.518535,double
+autor_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],Provozoval úřední desky. Souřadnicový systém.,4326,string
+subjekt_adresa_kod_ruian,[[ datovy-typ:celé-císlo | Celé číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. ID v Registru územních identifikátorů, adres a nemovitostí.",694185,integer
+subjekt_adresa_typ_ruian,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",stavební objekt,string
+subjekt_adresa_kod_adm,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285,string
+subjekt_adresa_kod_obce,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Obec - LAU 2 kód.",CZ0325 559351,string
+subjekt_adresa_nazev_obce,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název obce.",Plasy,string
+subjekt_adresa_nazev_momc,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Plzeň 2-Slovany,string
+subjekt_adresa_nazev_mop,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8,string
+subjekt_adresa_kod_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Kód části obce vedené v RÚIAN.",121533,string
+subjekt_adresa_nazev_casti_obce,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov,string
+subjekt_adresa_nazev_ulice,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní,string
+subjekt_adresa_typ_so,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.,string
+subjekt_adresa_cislo_domovni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12,integer
+subjekt_adresa_cislo_orientacni,[[ datovy-typ:celé-císlo | Celé číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",2,integer
+subjekt_adresa_znak_cisla_orientacniho,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a,string
+subjekt_adresa_psc,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Poštovní směrovací číslo.",33101,string
+subjekt_adresa_kod_okresu,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Okres - LAU 1 kód.",CZ0325,string
+subjekt_adresa_nazev_okresu,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název okresu.",Plzeň-sever,string
+subjekt_adresa_kod_kraje,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Kraj - NUTS 3 kód.",CZ032,string
+subjekt_adresa_nazev_kraje,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Název kraje.",Plzeňský kraj,string
+subjekt_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Označení budovy jejím názvem, číslem apod.",Prague Gate,string
+subjekt_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo patra nebo jiné označení patra.",4. patro,string
+subjekt_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo místnosti nebo jiné označení místnosti.",Místnost 4001,string
+subjekt_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Celá adresa jako jeden řetězec.","Plzeňská 285, 33101, Plasy",string
+subjekt_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná šířka.",49.6421053,double
+subjekt_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná délka.",12.518535,double
+subjekt_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Souřadnicový systém.",4326,string

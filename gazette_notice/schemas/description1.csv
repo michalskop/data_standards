@@ -1,0 +1,21 @@
+nazev_atributu,datovy_typ,popis,priklad
+id,string,"Identifikátor oznámení na úřední desce, např. pořadové číslo.",2018-1
+organizace_ico,string,Provozovatel úřední desky. IČO.,00258245
+organizace_nazev,string,Provozovatel úřední desky. Název.,Město Horní Datová
+autor_nazev,string,Původní autor oznámení. Název.,Obec Dolní Datová
+autor_ico,string,Původní autor oznámení. IČO.,258245
+url,string,URL oznámení (s lidsky čitelnou zprávou),https://example.com/uredni_deska/2018-1
+nazev,string,Název oznámení,Dotační program Hasiči 2018
+anotace,string,"Krátké shrnutí oznámení, anotace, abstrakt.",Program na podporu dobrovolných hasičů v roce 2018
+zverejneno_od,string,"Datum, příp. i čas, zveřejnění oznámení na úřední desce.",2018-01-03T11:12:13+01:00
+zverejneno_do,string,"Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce.",2018-01-03T11:12:13+01:00
+schvaleno,string,Datum vydání/schválení oznámení.,2017-12-31
+identifikator,string,Jednoznačný identifikátor dokumentu tvořícího oznámení.,P18D00000072
+znacka,string,Spisová značka oznámení.,OV/13/2018-Tisj
+cislo_jednaci,string,Číslo jednací oznámení.,OV/666/18 Tisj
+revize,string,Označení revize/verze oznámení.,20180101
+agenda,array,"Agendy, kategorie, správní činnosti, pod které spadá oznámení.",dotace
+dokument_nazev,string,Další dokument/y. Název dokumentu.,Příloha 1
+dokument_url,string,Další dokument/y. URL dokumentu.,https://example.com/uredni_deska/2018-1/priloha1.odt
+subjekt_nazev,string,"Název subjektu, kterého se oznámení týká.",Sbor dobrovolných hasičů Dolní Datová
+subjekt_ico,string,"IČO subjektu, kterého se oznámení týká.",00258267

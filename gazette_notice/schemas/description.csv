@@ -1,0 +1,92 @@
+schvaleno,string,Datum vydání/schválení oznámení.,2017-12-31
+subjekt_zemepisna_sirka,number,"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná šířka",52.5118998
+subjekt_zemepisna_delka,number,"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná délka",13.4247552
+subjekt_nazev,string,"Název subjektu, kterého se oznámení týká.",Sbor dobrovolných hasičů Dolní Datová
+subjekt_ico,string,"IČO subjektu, kterého se oznámení týká.",258267
+subjekt_adresa_nazev_obce,string,Název obce.,Horní Datová
+subjekt_adresa_mistnost,string,Číslo místnosti nebo jiné označení místnosti.,Místnost 4001
+subjekt_adresa_kod_ruian,integer,"ID v Registru územních identifikátorů, adres a nemovitostí.",696285
+subjekt_adresa_cislo_domovni,integer,"Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12
+subjekt_adresa_kod_obce,string,Obec - LAU 2 kód.,CZ0325 559351
+subjekt_adresa_nazev_okresu,string,Název okresu.,Plzeň-sever
+subjekt_adresa_typ_so,string,"Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.
+subjekt_adresa_nazev_ulice,string,"Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní
+subjekt_adresa_text,string,Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy"
+subjekt_adresa_kod_adm,integer,"ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285
+subjekt_adresa_budova,string,"Označení budovy jejím názvem, číslem apod.",HD Gate
+subjekt_adresa_nazev_casti_obce,string,"Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov
+subjekt_adresa_mop,string,"Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8
+subjekt_adresa_kod_casti_obce,string,Kód části obce vedené v RÚIAN.,121533
+subjekt_adresa_typ_ruian,string,"Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",696285
+subjekt_adresa_nazev_kraje,string,Název kraje.,Plzeňský kraj
+subjekt_adresa_kod_kraje,string,Kraj - NUTS 3 kód.,CZ032
+subjekt_adresa_patro,string,Číslo patra nebo jiné označení patra.,4.patro
+subjekt_adresa_psc,string,Poštovní směrovací číslo.,33101
+subjekt_adresa_kod_okresu,string,Okres - LAU 1 kód.,CZ032
+subjekt_adresa_znak_cisla_orientacniho,string,"Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a
+subjekt_adresa_momc,string,"Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Horní Datová 1 - Drahotín
+subjekt_adresa_cislo_orientacni,integer,"Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",1
+subjekt_souradnicovy_system,string,"Souřadnicový systém podle registru EPSG označující jednotlivé systémy, např. 4326 (pro klasický WGS84) nebo 5514 (pro česko-slovenský S-JTSK).",4326
+zverejneno_od,string,"Datum, příp. i čas, zveřejnění oznámení na úřední desce.",2018-01-03T11:12:13+01:00
+url,string,URL oznámení (s lidsky čitelnou zprávou),https://example.com/uredni_deska/2018-1
+cislo_jednaci,string,Číslo jednací oznámení.,OV/666/18 Tisj
+anotace,string,"Krátké shrnutí oznámení, anotace, abstrakt.",Program na podporu dobrovolných hasičů v roce 2018
+autor_ico,string,Původní autor oznámení. IČO.,258245
+autor_nazev,string,Původní autor oznámení. Název.,Obec Dolní Datová
+autor_adresa_nazev_obce,string,Název obce.,Horní Datová
+autor_adresa_mistnost,string,Číslo místnosti nebo jiné označení místnosti.,Místnost 4001
+autor_adresa_kod_ruian,integer,"ID v Registru územních identifikátorů, adres a nemovitostí.",696285
+autor_adresa_cislo_domovni,integer,"Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12
+autor_adresa_kod_obce,string,Obec - LAU 2 kód., CZ0325 559351
+autor_adresa_nazev_okresu,string,Název okresu.,Plzeň-sever
+autor_adresa_typ_so,string,"Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.
+autor_adresa_nazev_ulice,string,"Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní
+autor_adresa_text,string,Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy"
+autor_adresa_kod_adm,integer,"ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285
+autor_adresa_budova,string,"Označení budovy jejím názvem, číslem apod.",HD Gate
+autor_adresa_nazev_casti_obce,string,"Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov
+autor_adresa_mop,string,"Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8
+autor_adresa_kod_casti_obce,string,Kód části obce vedené v RÚIAN.,121533
+autor_adresa_typ_ruian,string,"Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",696285
+autor_adresa_nazev_kraje,string,Název kraje.,Plzeňský kraj
+autor_adresa_kod_kraje,string,Kraj - NUTS 3 kód.,CZ032
+autor_adresa_patro,string,Číslo patra nebo jiné označení patra.,4.patro
+autor_adresa_psc,string,Poštovní směrovací číslo.,33101
+autor_adresa_kod_okresu,string,Okres - LAU 1 kód.,CZ032
+autor_adresa_znak_cisla_orientacniho,string,"Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a
+autor_adresa_momc,string,"Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Horní Datová 1 - Drahotín
+autor_adresa_cislo_orientacni,integer,"Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",1
+agenda,array,"Agendy, kategorie, správní činnosti, pod které spadá oznámení.",dotace
+zverejneno_do,string,"Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce.",2018-01-03T11:12:13+01:00
+znacka,string,Spisová značka oznámení.,OV/13/2018-Tisj
+dokument_nazev,string,Další dokument/y. Název dokumentu.,Příloha 1
+dokument_url,string,Další dokument/y. URL dokumentu.,https://example.com/uredni_deska/2018-1/priloha1.odt
+identifikator,string,Jednoznačný identifikátor dokumentu tvořícího oznámení.,P18D00000072
+nazev,string,Název oznámení,Dotační program Hasiči 2018
+organizace_ico,string,Provozovatel úřední desky. IČO.,258245
+organizace_nazev,string,Provozovatel úřední desky. Název.,Město Horní Datová
+organizace_adresa_nazev_obce,string,Název obce.,Horní Datová
+organizace_adresa_mistnost,string,Číslo místnosti nebo jiné označení místnosti.,Místnost 4001
+organizace_adresa_kod_ruian,integer,"ID v Registru územních identifikátorů, adres a nemovitostí.",696285
+organizace_adresa_cislo_domovni,integer,"Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",12
+organizace_adresa_kod_obce,string,Obec - LAU 2 kód., CZ0325 559351
+organizace_adresa_nazev_okresu,string,Název okresu.,Plzeň-sever
+organizace_adresa_typ_so,string,"Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",č.ev.
+organizace_adresa_nazev_ulice,string,"Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",Hlavní
+organizace_adresa_text,string,Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy"
+organizace_adresa_kod_adm,integer,"ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",696285
+organizace_adresa_budova,string,"Označení budovy jejím názvem, číslem apod.",HD Gate
+organizace_adresa_nazev_casti_obce,string,"Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",Žižkov
+organizace_adresa_mop,string,"Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",Praha 8
+organizace_adresa_kod_casti_obce,string,Kód části obce vedené v RÚIAN.,121533
+organizace_adresa_typ_ruian,string,"Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",696285
+organizace_adresa_nazev_kraje,string,Název kraje.,Plzeňský kraj
+organizace_adresa_kod_kraje,string,Kraj - NUTS 3 kód.,CZ032
+organizace_adresa_patro,string,Číslo patra nebo jiné označení patra.,4.patro
+organizace_adresa_psc,string,Poštovní směrovací číslo.,33101
+organizace_adresa_kod_okresu,string,Okres - LAU 1 kód.,CZ032
+organizace_adresa_znak_cisla_orientacniho,string,"Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",a
+organizace_adresa_momc,string,"Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",Horní Datová 1 - Drahotín
+organizace_adresa_cislo_orientacni,integer,"Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",1
+revize,string,Označení revize/verze oznámení.,20180101
+id,string,"Identifikátor oznámení na úřední desce, např. pořadové číslo.",2018-1
