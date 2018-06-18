@@ -4,7 +4,7 @@ import json
 
 path = "/home/michal/project/data_standards/gazette_notice/schemas/"
 
-with open(path + "uredni-deska-20180406.json") as fin:
+with open(path + "uredni-deska-20180615.json") as fin:
     schema = json.load(fin)
 
 
@@ -57,5 +57,5 @@ with open(path + "description_full.csv") as fin:
             "type": row['datovy_typ'],
             "description": row['popis']
         })
-with open(path + "csv-schema.json", "w") as fout:
+with open(path + "csv-schema-20180615.json", "w") as fout:
     json.dump(csvschema, fout, ensure_ascii=False, indent=4)

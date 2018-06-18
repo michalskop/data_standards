@@ -1,5 +1,6 @@
 nazev_atributu,datovy_typ,popis,priklad,datovy_typ
-id,[[ datovy-typ:řetezec | Řetězec ]],"Identifikátor oznámení na úřední desce, např. pořadové číslo.",2018-1,string
+id,[[ datovy-typ:cele-cislo | Celé číslo ]],"Identifikátor oznámení na úřední desce, např. pořadové číslo.",1024,integer
+identifikator,[[ datovy-typ:řetezecs | Řetězec ]],Jednoznačný identifikátor dokumentu tvořícího oznámení, např. vlastní číselná řada.,P18D00000072,string
 organizace_ico,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. IČO.,00258245,string
 organizace_nazev,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Název.,Město Horní Datová,string
 autor_nazev,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Název.,Obec Dolní Datová,string
@@ -7,10 +8,9 @@ autor_ico,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. IČO
 url,[[ datovy-typ:řetezec | Řetězec ]],URL oznámení (s lidsky čitelnou zprávou),https://example.com/uredni_deska/2018-1,string
 nazev,[[ datovy-typ:řetezec | Řetězec ]],Název oznámení,Dotační program Hasiči 2018,string
 anotace,[[ datovy-typ:řetezec | Řetězec ]],"Krátké shrnutí oznámení, anotace, abstrakt.",Program na podporu dobrovolných hasičů v roce 2018,string
-zverejneno_od,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, zveřejnění oznámení na úřední desce.",2018-01-03T11:12:13+01:00,string
-zverejneno_do,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce.",2018-01-03T11:12:13+01:00,string
+zverejneno,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, zveřejnění oznámení na úřední desce.",2018-01-03T11:12:13+01:00,string
+sejmuto,[[ datovy-typ:řetezec | Řetězec ]],"Datum, příp. i čas, sejmutí oznámení, tj. do kdy je oznámení zveřejněno na úřední desce.",2018-01-03T11:12:13+01:00,string
 schvaleno,[[ datovy-typ:řetezec | Řetězec ]],Datum vydání/schválení oznámení.,2017-12-31,string
-identifikator,[[ datovy-typ:řetezec | Řetězec ]],Jednoznačný identifikátor dokumentu tvořícího oznámení.,P18D00000072,string
 znacka,[[ datovy-typ:řetezec | Řetězec ]],Spisová značka oznámení.,OV/13/2018-Tisj,string
 cislo_jednaci,[[ datovy-typ:řetezec | Řetězec ]],Číslo jednací oznámení.,OV/666/18 Tisj,string
 revize,[[ datovy-typ:řetezec | Řetězec ]],Označení revize/verze oznámení.,20180101,string
@@ -42,6 +42,8 @@ organizace_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Provozovatel ú�
 organizace_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Číslo patra nebo jiné označení patra.,4. patro,string
 organizace_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Číslo místnosti nebo jiné označení místnosti.,Místnost 4001,string
 organizace_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],Provozovatel úřední desky. Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy",string
+organizace_adresa_url,[[ datovy-typ:url | URL]], Provozoval úřední desky. URL webové stránky.,https://example.com,string
+organizace_adresa_email,[[ datovy-typ:řetezec | Řetězec ]],Provozoval úřední desky. Kontaktní email.,info@example.com,string
 organizace_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Provozovatel úřední desky. Zeměpisná šířka.,49.6421053,double
 organizace_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Provozovatel úřední desky. Zeměpisná délka.,12.518535,double
 organizace_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],Provozoval úřední desky. Souřadnicový systém.,4326,string
@@ -68,6 +70,8 @@ autor_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Původní autor ozná
 autor_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Číslo patra nebo jiné označení patra.,4. patro,string
 autor_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Číslo místnosti nebo jiné označení místnosti.,Místnost 4001,string
 autor_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Celá adresa jako jeden řetězec.,"Plzeňská 285, 33101, Plasy",string
+autor_adresa_url,[[ datovy-typ:url | URL]],Původní autor oznámení. URL webové stránky.,https://example.com,string
+autor_adresa_email,[[ datovy-typ:řetezec | Řetězec ]],Původní autor oznámení. Kontaktní email.,info@example.com,string
 autor_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Původní autor oznámení. Zeměpisná šířka.,49.6421053,double
 autor_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],Původní autor oznámení. Zeměpisná délka.,12.518535,double
 autor_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],Provozoval úřední desky. Souřadnicový systém.,4326,string
@@ -94,6 +98,8 @@ subjekt_adresa_budova,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a
 subjekt_adresa_patro,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo patra nebo jiné označení patra.",4. patro,string
 subjekt_adresa_mistnost,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Číslo místnosti nebo jiné označení místnosti.",Místnost 4001,string
 subjekt_adresa_text,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Celá adresa jako jeden řetězec.","Plzeňská 285, 33101, Plasy",string
+subjekt_adresa_url,[[ datovy-typ:url | URL]],"Osoby, organizace a místa, kterých se oznámení týká. URL webové stránky.",https://example.com,string
+subjekt_adresa_email,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Kontaktní email.",info@example.com,string
 subjekt_zemepisna_sirka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná šířka.",49.6421053,double
 subjekt_zemepisna_delka,[[ datovy-typ:desetinné-císlo | Desetinné číslo ]],"Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná délka.",12.518535,double
 subjekt_souradnicovy_system,[[ datovy-typ:řetezec | Řetězec ]],"Osoby, organizace a místa, kterých se oznámení týká. Souřadnicový systém.",4326,string
