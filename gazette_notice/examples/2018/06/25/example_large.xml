@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uredni_deska>
+    <oznameni>
+        <id>1024</id>
+        <identifikator>2018-13</identifikator>
+        <organizace>
+            <ico>00258245</ico>
+        </organizace>
+        <url>https://example.com/uredni_deska/2018-2</url>
+        <nazev>Podpora spolkového života ve městě</nazev>
+        <zverejneno>2018-01-20</zverejneno>
+        <sejmuto>2018-02-20</sejmuto>
+    </oznameni>
+    <oznameni>
+    	<id>1025</id>
+    	<identifikator>2018-14</identifikator>
+    	<organizace>
+    		<nazev>Město Horní Datová</nazev>
+    		<ico>00258245</ico>
+    		<adresa>
+    			<kod_adm>696285</kod_adm>
+    			<kod_obce> CZ0325 559351</kod_obce>
+    			<nazev_obce>Horní Datová</nazev_obce>
+    			<momc>Horní Datová 1 - Drahotín</momc>
+    			<kod_casti_obce>121533</kod_casti_obce>
+    			<nazev_casti_obce>Žižkov</nazev_casti_obce>
+    			<nazev_ulice>Hlavní</nazev_ulice>
+    			<typ_so>č.ev.</typ_so>
+    			<cislo_domovni>12</cislo_domovni>
+    			<cislo_orientacni>1</cislo_orientacni>
+    			<znak_cisla_orientacniho>a</znak_cisla_orientacniho>
+    			<psc>33101</psc>
+    			<kod_okresu>CZ032</kod_okresu>
+    			<nazev_okresu>Plzeň-sever</nazev_okresu>
+    			<kod_kraje>CZ032</kod_kraje>
+    			<nazev_kraje>Plzeňský kraj</nazev_kraje>
+    			<budova>HD Gate</budova>
+    			<mistnost>Místnost 4001</mistnost>
+    			<url>https://horni.datova</url>
+    			<email>info@horni.datova</email>
+    		</adresa>
+    	</organizace>
+    	<autor>
+    		<nazev>Obec Dolní Datová</nazev>
+    		<ico>00258245</ico>
+    		<adresa>
+    			<kod_adm>696285</kod_adm>
+    			<kod_obce> CZ0325 559352</kod_obce>
+    			<nazev_obce>Dolní Datová</nazev_obce>
+    			<kod_casti_obce>121544</kod_casti_obce>
+    			<nazev_ulice>Polní</nazev_ulice>
+    			<typ_so>č.p.</typ_so>
+    			<cislo_domovni>1</cislo_domovni>
+    			<psc>33101</psc>
+    			<kod_okresu>CZ032</kod_okresu>
+    			<nazev_okresu>Plzeň-sever</nazev_okresu>
+    			<kod_kraje>CZ032</kod_kraje>
+    			<nazev_kraje>Plzeňský kraj</nazev_kraje>
+    			<url>https://dolni.datova</url>
+    			<email>love@dolni.datova</email>
+    		</adresa>
+    	</autor>
+    	<url>https://example.com/uredni_deska/2018-3</url>
+    	<nazev>Podpora spolkového života ve městě II</nazev>
+    	<anotace>Program na podporu dobrovolných hasičů v roce 2018</anotace>
+    	<zverejneno>2018-01-03</zverejneno>
+    	<sejmuto>2018-02-03</sejmuto>
+    	<schvaleno>2017-12-31</schvaleno>
+    	<znacka>OV/13/2018-Tisj</znacka>
+    	<cislo_jednaci>OV/666/18 Tisj</cislo_jednaci>
+    	<revize>20180101</revize>
+    	<agenda>dotace</agenda>
+    	<agenda>přenesená působnost</agenda>
+    	<dokument>
+    		<nazev>Příloha 1</nazev>
+    		<url>https://example.com/uredni_deska/2018-1/priloha1.odt</url>
+    	</dokument>
+    	<dokument>
+    		<nazev>Příloha 2</nazev>
+    		<url>https://example.com/uredni_deska/2018-1/priloha2.jpg</url>
+    	</dokument>
+    	<subjekt>
+    		<nazev>Sbor dobrovolných hasičů Dolní Datová</nazev>
+    		<ico>00258267</ico>
+    		<adresa>
+    			<kod_ruian>694185</kod_ruian>
+    			<typ_ruian>stavební objekt</typ_ruian>
+    			<kod_obce> CZ0325 559352</kod_obce>
+    			<nazev_obce>Dolní Datová</nazev_obce>
+    			<kod_casti_obce>121544</kod_casti_obce>
+    			<nazev_ulice>Hasičská</nazev_ulice>
+    			<typ_so>č.p.</typ_so>
+    			<cislo_domovni>13</cislo_domovni>
+    			<psc>33101</psc>
+    			<kod_okresu>CZ032</kod_okresu>
+    			<nazev_okresu>Plzeň-sever</nazev_okresu>
+    			<kod_kraje>CZ032</kod_kraje>
+    			<nazev_kraje>Plzeňský kraj</nazev_kraje>
+    			<url>https://fajni-hasici-dolni.datova</url>
+    			<email>hori@fajni-hasici-dolni.datova</email>
+    		</adresa>
+            <zemepisna_sirka>52.5118998</zemepisna_sirka>
+            <zemepisna_delka>13.4247552</zemepisna_delka>
+    	</subjekt>
+    	<subjekt>
+    		<nazev>Spolek dobrovolných požárníků Dolní Datová</nazev>
+    		<ico>00258256</ico>
+    		<adresa>
+    			<kod_obce> CZ0325 559352</kod_obce>
+    			<nazev_obce>Dolní Datová</nazev_obce>
+    			<kod_casti_obce>121544</kod_casti_obce>
+    			<nazev_ulice>Hasičská</nazev_ulice>
+    			<typ_so>č.p.</typ_so>
+    			<cislo_domovni>666</cislo_domovni>
+    			<psc>33101</psc>
+    			<kod_okresu>CZ032</kod_okresu>
+    			<nazev_okresu>Plzeň-sever</nazev_okresu>
+    			<kod_kraje>CZ032</kod_kraje>
+    			<nazev_kraje>Plzeňský kraj</nazev_kraje>
+    			<url>https://super-hasici-dolni.datova</url>
+    			<email>hori@super-hasici-dolni.datova</email>
+    		</adresa>
+    	</subjekt>
+        <zverejnil>Mirek Dušín</zverejnil>
+        <odbor>VD</odbor>
+    </oznameni>

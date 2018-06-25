@@ -90,6 +90,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
+                            <xs:any namespace="##other" maxOccurs="unbounded" minOccurs="0" processContents="skip"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

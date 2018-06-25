@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uredni_deska>
+    <oznameni>
+        <id>1024</id>
+        <identifikator>2018-13</identifikator>
+        <organizace>
+            <ico>00258245</ico>
+        </organizace>
+        <url>https://example.com/uredni_deska/2018-2</url>
+        <nazev>Podpora spolkového života ve městě</nazev>
+        <zverejneno>2018-01-20</zverejneno>
+        <sejmuto>2018-02-20</sejmuto>
+    </oznameni>
+    <oznameni>
+        <id>1025</id>
+        <identifikator>2018-14</identifikator>
+        <organizace>
+            <ico>00258245</ico>
+        </organizace>
+        <url>https://example.com/uredni_deska/2018-3</url>
+        <nazev>Podpora spolkového života ve městě II</nazev>
+        <zverejneno>2018-01-20</zverejneno>
+        <sejmuto>2018-02-20</sejmuto>
+        <zverejnil>Mirek Dušín</zverejnil>
+        <odbor>VD</odbor>
+    </oznameni>
+</uredni_deska>
