@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<uredni_deska>
+<uredni_deska xmlns:x="https://example.com">
     <oznameni>
         <id>1024</id>
         <identifikator>2018-13</identifikator>
@@ -21,7 +21,7 @@
         <nazev>Podpora spolkového života ve městě II</nazev>
         <zverejneno>2018-01-20</zverejneno>
         <sejmuto>2018-02-20</sejmuto>
-        <zverejnil>Mirek Dušín</zverejnil>
-        <odbor>VD</odbor>
+        <x:zverejnil>Mirek Dušín</x:zverejnil>
+        <x:odbor>VD</x:odbor>
     </oznameni>
 </uredni_deska>
