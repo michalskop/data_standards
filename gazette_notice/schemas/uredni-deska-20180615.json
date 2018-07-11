@@ -37,7 +37,7 @@
                     "title": "Kód obce",
                     "description": "Obec - LAU 2 kód.",
                     "examples": [
-                        " CZ0325 559351"
+                        "CZ0325 559351"
                     ]
                 },
                 "nazev_obce": {
